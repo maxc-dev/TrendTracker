@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+nvidia:
+  name: NVIDIA
+
+amd:
+  name: AMD
+
+intel:
+  name: Intel

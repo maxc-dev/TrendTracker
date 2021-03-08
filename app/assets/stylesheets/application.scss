@@ -1,0 +1,189 @@
+//importing bootstrap
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+//imports global css variables file
+@import "vars";
+
+//imports files that require separate scss
+@import "home";
+
+//includes w3schools standards and google api font for 'Play'
+@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+
+//Setting the font for all text to be Play from google apis
+//Also removes text decoration and sets the default colour to the default colour in @vars
+* {
+  font-family: "Play", sans-serif;
+  color: $text-colour;
+  text-decoration: none !important;
+  outline: none;
+}
+
+//formats the general page content (body) and in relation to the header
+body {
+  background-color: $background;
+}
+
+h1, h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  padding: 10px $margin-sides;
+}
+
+/* Page content */
+.content {
+  margin-top: $header-size;
+  padding: $margin-sides;
+  margin-bottom: $footer-size;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  width: 100%;
+
+  .head {
+    top: 0;
+  }
+
+  .foot {
+    bottom: 0;
+  }
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: ($header-size+2);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $back-hover-colour;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $back-colour;
+}
+
+/* Responsive design to deal with card layouts */
+$card-width: 400px;
+@media only screen and (max-width: 1500px) {
+  .layout-grid {
+    grid-template-columns: repeat(2, $card-width) !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .layout-grid {
+    grid-template-columns: $card-width !important;
+  }
+}
+
+/* Container layout for all card-style designs */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 25% 200px auto;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, $card-width);
+  grid-gap: 24px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.singular-layout-grid {
+  @extend .layout-grid;
+  grid-template-columns: $card-width;
+}
+
+//actual child node of the card
+$shadow: 5px;
+.child {
+  box-shadow: $shadow $shadow 4px rgba(0,0,0,0.2);
+  min-height: 100px;
+  background: $back-colour;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 10px;
+}
+
+//background changes when hovered for a child card
+.child:hover {
+  background: $back-hover-colour;
+}
+
+.clickable-child {
+  @extend .child;
+  cursor: pointer;
+}
+
+.warning-child {
+  @extend .child;
+  background: $back-colour-warning !important;
+}
+
+.warning-child:hover {
+  background: $back-colour-warning-hover !important;
+}
+
+//sets all images to a standard style
+img {
+  border-radius: 8px;
+  max-width: 380px;
+  height: auto;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+//dims certain images if there is text over it (eg "select" text)
+#dim-image {
+  opacity: 0.2;
+  transition: transform .5s;
+}
+
+//centers text over an image
+.centered-img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+.centered-img-container {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+//scrollbar css that centers it
+.container-scroll {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-left: 17%;
+  margin-right: 17%;
+}

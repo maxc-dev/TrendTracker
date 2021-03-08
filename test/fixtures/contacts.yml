@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  title: More products
+  body: Can more products be added to the website please?
+
+two:
+  user_id: 2
+  title: Phone number
+  body: How do I call the website developer?
+
+three:
+  user_id: 3
+  title: New releases
+  body: When will you be adding the new processors?

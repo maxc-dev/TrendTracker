@@ -58,3 +58,6 @@ gem 'jquery-validation-rails'
 
 # devise gem
 gem 'devise'
+
+#twitter api
+gem 'twitter', '~> 7.0'

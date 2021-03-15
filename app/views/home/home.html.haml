@@ -1,0 +1,96 @@
+- if @twitter_response.nil?
+  error
+- else
+  %div{id: "map", class: 'map'}
+    :javascript
+
+      var data = '#{@twitter_response}'.replaceAll('&quot;', '\"')
+
+      var api_twt = JSON.parse(data)
+
+      console.log(api_twt)
+
+      console.log(api_twt.trends[1])
+
+      const token = 'pk.eyJ1IjoibWF4Y3J0ciIsImEiOiJja20wcnB5bzUxbHlyMm5yemlqbnU4MTU5In0.IqwYS8p6fK7XwiJ_hTRFSA'
+
+      mapboxgl.accessToken = token;
+      var map = new mapboxgl.Map({
+        container: 'map',
+        center: [-0.589514, 51.242722],
+        //style: 'mapbox://styles/maxcrtr/ckmay2zhijdqq17l9c6j78qbv',
+        style: 'mapbox://styles/mapbox/dark-v10',
+        // style: 'mapbox://styles/mapbox/streets-v11',
+        zoom: 3
+      });
+
+      map.addControl(
+        new MapboxGeocoder({
+          accessToken: token,
+          mapboxgl: mapboxgl
+        })
+      );
+
+      map.on('load', function() {
+          // Add an image to use as a custom marker
+        map.loadImage(
+          'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
+          function(error, image) {
+            if (error) throw error;
+            map.addImage('custom-marker', image);
+                  // Add a GeoJSON source with 2 points
+            map.addSource('points', {
+              type: 'geojson',
+              data: {
+                type: 'FeatureCollection',
+                features: [{      // feature for surrey uni
+                  type: 'Feature',
+                  geometry: {
+                    type: 'Point',
+                    coordinates: [-0.589514, 51.242722]
+                  },
+                  properties: {
+                    title: 'hello'
+                  }
+                }]
+              }
+            });
+
+            /*
+              so basically we can't 'update' the source
+              we have to have a copy of the data on the server
+              then append/remove any extra data in real time
+            */
+
+            //map.getSource('points').setData({
+            //  type: "FeatureCollection",
+            //  features: [{
+            //    type: "Feature",
+            //    properties: { "title": "University of Surrey" },
+            //    geometry: {
+            //      type: "Point",
+            //      coordinates: [-0.589514, 51.242722]
+            //    }
+            //  }]
+            //});
+
+                  // Add a symbol layer
+            map.addLayer({
+              'id': 'points',
+              'type': 'symbol',
+              'source': 'points',
+              'layout': {
+                'icon-image': 'custom-marker',
+                          // get the title name from the source's "title" property
+                'text-field': ['get', 'title'],
+                'text-font': [
+                  'Open Sans Semibold',
+                  'Arial Unicode MS Bold'
+                ],
+                'text-offset': [0, 1.25],
+                'text-anchor': 'top'
+              }
+            });
+          }
+        );
+      });

@@ -18,33 +18,5 @@
     = csrf_meta_tags
 
   %body{id: "body"}
-    %div{id: "map", class: 'map'}
-    :javascript
 
-      const token = 'pk.eyJ1IjoibWF4Y3J0ciIsImEiOiJja20wcnB5bzUxbHlyMm5yemlqbnU4MTU5In0.IqwYS8p6fK7XwiJ_hTRFSA'
-
-      mapboxgl.accessToken = token;
-      var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
-      });
-
-      map.addControl(
-        new MapboxGeocoder({
-          accessToken: token,
-          mapboxgl: mapboxgl
-        })
-      );
-
-      var popup = new mapboxgl.Popup({ offset: 25 }).setText(
-        '#apiTesting'
-      );
-
-      // create DOM element for the marker
-      var el = document.createElement('div');
-      el.id = 'marker';
-
-      var marker = new mapboxgl.Marker()
-        .setLngLat([12.550343, 55.665957])
-        .setPopup(popup) // sets a popup on this marker
-        .addTo(map);
+    = yield

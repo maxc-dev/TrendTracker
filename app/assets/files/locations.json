@@ -1,0 +1,2804 @@
+[
+  {
+    "woeid": 1,
+    "name": "Worldwide",
+    "countryCode": null,
+    "country": ""
+  },
+  {
+    "woeid": 2972,
+    "name": "Winnipeg",
+    "countryCode": "CA",
+    "country": "Canada"
+  },
+  {
+    "woeid": 3369,
+    "name": "Ottawa",
+    "countryCode": "CA",
+    "country": "Canada"
+  },
+  {
+    "woeid": 3444,
+    "name": "Quebec",
+    "countryCode": "CA",
+    "country": "Canada"
+  },
+  {
+    "woeid": 3534,
+    "name": "Montreal",
+    "countryCode": "CA",
+    "country": "Canada"
+  },
+  {
+    "woeid": 4118,
+    "name": "Toronto",
+    "countryCode": "CA",
+    "country": "Canada"
+  },
+  {
+    "woeid": 8676,
+    "name": "Edmonton",
+    "countryCode": "CA",
+    "country": "Canada"
+  },
+  {
+    "woeid": 8775,
+    "name": "Calgary",
+    "countryCode": "CA",
+    "country": "Canada"
+  },
+  {
+    "woeid": 9807,
+    "name": "Vancouver",
+    "countryCode": "CA",
+    "country": "Canada"
+  },
+  {
+    "woeid": 12723,
+    "name": "Birmingham",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 12903,
+    "name": "Blackpool",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 13383,
+    "name": "Bournemouth",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 13911,
+    "name": "Brighton",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 13963,
+    "name": "Bristol",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 15127,
+    "name": "Cardiff",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 17044,
+    "name": "Coventry",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 18114,
+    "name": "Derby",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 19344,
+    "name": "Edinburgh",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 21125,
+    "name": "Glasgow",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 25211,
+    "name": "Hull",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 26042,
+    "name": "Leeds",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 26062,
+    "name": "Leicester",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 26734,
+    "name": "Liverpool",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 28218,
+    "name": "Manchester",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 28869,
+    "name": "Middlesbrough",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 30079,
+    "name": "Newcastle",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 30720,
+    "name": "Nottingham",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 32185,
+    "name": "Plymouth",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 32452,
+    "name": "Portsmouth",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 32566,
+    "name": "Preston",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 34503,
+    "name": "Sheffield",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 36240,
+    "name": "Stoke-on-Trent",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 36758,
+    "name": "Swansea",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 44418,
+    "name": "London",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 44544,
+    "name": "Belfast",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 76456,
+    "name": "Santo Domingo",
+    "countryCode": "DO",
+    "country": "Dominican Republic"
+  },
+  {
+    "woeid": 83123,
+    "name": "Guatemala City",
+    "countryCode": "GT",
+    "country": "Guatemala"
+  },
+  {
+    "woeid": 110978,
+    "name": "Acapulco",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 111579,
+    "name": "Aguascalientes",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 115958,
+    "name": "Chihuahua",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 116545,
+    "name": "Mexico City",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 116556,
+    "name": "Ciudad Juarez",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 116564,
+    "name": "Nezahualcóyotl",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 117994,
+    "name": "Culiacán",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 118466,
+    "name": "Ecatepec de Morelos",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 124162,
+    "name": "Guadalajara",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 124785,
+    "name": "Hermosillo",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 131068,
+    "name": "León",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 133327,
+    "name": "Mérida",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 133475,
+    "name": "Mexicali",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 134047,
+    "name": "Monterrey",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 134091,
+    "name": "Morelia",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 134395,
+    "name": "Naucalpan de Juárez",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 137612,
+    "name": "Puebla",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 138045,
+    "name": "Querétaro",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 141272,
+    "name": "Saltillo",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 144265,
+    "name": "San Luis Potosí",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 149361,
+    "name": "Tijuana",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 149769,
+    "name": "Toluca",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 151582,
+    "name": "Zapopan",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 332471,
+    "name": "Mendoza",
+    "countryCode": "AR",
+    "country": "Argentina"
+  },
+  {
+    "woeid": 349859,
+    "name": "Santiago",
+    "countryCode": "CL",
+    "country": "Chile"
+  },
+  {
+    "woeid": 349860,
+    "name": "Concepcion",
+    "countryCode": "CL",
+    "country": "Chile"
+  },
+  {
+    "woeid": 349861,
+    "name": "Valparaiso",
+    "countryCode": "CL",
+    "country": "Chile"
+  },
+  {
+    "woeid": 368148,
+    "name": "Bogotá",
+    "countryCode": "CO",
+    "country": "Colombia"
+  },
+  {
+    "woeid": 368149,
+    "name": "Cali",
+    "countryCode": "CO",
+    "country": "Colombia"
+  },
+  {
+    "woeid": 368150,
+    "name": "Medellín",
+    "countryCode": "CO",
+    "country": "Colombia"
+  },
+  {
+    "woeid": 368151,
+    "name": "Barranquilla",
+    "countryCode": "CO",
+    "country": "Colombia"
+  },
+  {
+    "woeid": 375732,
+    "name": "Quito",
+    "countryCode": "EC",
+    "country": "Ecuador"
+  },
+  {
+    "woeid": 375733,
+    "name": "Guayaquil",
+    "countryCode": "EC",
+    "country": "Ecuador"
+  },
+  {
+    "woeid": 395269,
+    "name": "Caracas",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 395270,
+    "name": "Maracaibo",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 395271,
+    "name": "Maracay",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 395272,
+    "name": "Valencia",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 395273,
+    "name": "Barcelona",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 395275,
+    "name": "Ciudad Guayana",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 395277,
+    "name": "Turmero",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 418440,
+    "name": "Lima",
+    "countryCode": "PE",
+    "country": "Peru"
+  },
+  {
+    "woeid": 455819,
+    "name": "Brasília",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455820,
+    "name": "Belém",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455821,
+    "name": "Belo Horizonte",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455822,
+    "name": "Curitiba",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455823,
+    "name": "Porto Alegre",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455824,
+    "name": "Recife",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455825,
+    "name": "Rio de Janeiro",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455826,
+    "name": "Salvador",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455827,
+    "name": "São Paulo",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455828,
+    "name": "Campinas",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455830,
+    "name": "Fortaleza",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455831,
+    "name": "Goiânia",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455833,
+    "name": "Manaus",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455834,
+    "name": "São Luís",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 455867,
+    "name": "Guarulhos",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 466861,
+    "name": "Córdoba",
+    "countryCode": "AR",
+    "country": "Argentina"
+  },
+  {
+    "woeid": 466862,
+    "name": "Rosario",
+    "countryCode": "AR",
+    "country": "Argentina"
+  },
+  {
+    "woeid": 468382,
+    "name": "Barquisimeto",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 468384,
+    "name": "Maturín",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 468739,
+    "name": "Buenos Aires",
+    "countryCode": "AR",
+    "country": "Argentina"
+  },
+  {
+    "woeid": 493417,
+    "name": "Gdańsk",
+    "countryCode": "PL",
+    "country": "Poland"
+  },
+  {
+    "woeid": 502075,
+    "name": "Kraków",
+    "countryCode": "PL",
+    "country": "Poland"
+  },
+  {
+    "woeid": 505120,
+    "name": "Lodz",
+    "countryCode": "PL",
+    "country": "Poland"
+  },
+  {
+    "woeid": 514048,
+    "name": "Poznań",
+    "countryCode": "PL",
+    "country": "Poland"
+  },
+  {
+    "woeid": 523920,
+    "name": "Warsaw",
+    "countryCode": "PL",
+    "country": "Poland"
+  },
+  {
+    "woeid": 526363,
+    "name": "Wroclaw",
+    "countryCode": "PL",
+    "country": "Poland"
+  },
+  {
+    "woeid": 551801,
+    "name": "Vienna",
+    "countryCode": "AT",
+    "country": "Austria"
+  },
+  {
+    "woeid": 560472,
+    "name": "Cork",
+    "countryCode": "IE",
+    "country": "Ireland"
+  },
+  {
+    "woeid": 560743,
+    "name": "Dublin",
+    "countryCode": "IE",
+    "country": "Ireland"
+  },
+  {
+    "woeid": 560912,
+    "name": "Galway",
+    "countryCode": "IE",
+    "country": "Ireland"
+  },
+  {
+    "woeid": 580778,
+    "name": "Bordeaux",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 608105,
+    "name": "Lille",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 609125,
+    "name": "Lyon",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 610264,
+    "name": "Marseille",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 612977,
+    "name": "Montpellier",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 613858,
+    "name": "Nantes",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 615702,
+    "name": "Paris",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 619163,
+    "name": "Rennes",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 627791,
+    "name": "Strasbourg",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 628886,
+    "name": "Toulouse",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 638242,
+    "name": "Berlin",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 641142,
+    "name": "Bremen",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 645458,
+    "name": "Dortmund",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 645686,
+    "name": "Dresden",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 646099,
+    "name": "Dusseldorf",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 648820,
+    "name": "Essen",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 650272,
+    "name": "Frankfurt",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 656958,
+    "name": "Hamburg",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 667931,
+    "name": "Cologne",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 671072,
+    "name": "Leipzig",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 676757,
+    "name": "Munich",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 698064,
+    "name": "Stuttgart",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 711080,
+    "name": "Bologna",
+    "countryCode": "IT",
+    "country": "Italy"
+  },
+  {
+    "woeid": 716085,
+    "name": "Genoa",
+    "countryCode": "IT",
+    "country": "Italy"
+  },
+  {
+    "woeid": 718345,
+    "name": "Milan",
+    "countryCode": "IT",
+    "country": "Italy"
+  },
+  {
+    "woeid": 719258,
+    "name": "Naples",
+    "countryCode": "IT",
+    "country": "Italy"
+  },
+  {
+    "woeid": 719846,
+    "name": "Palermo",
+    "countryCode": "IT",
+    "country": "Italy"
+  },
+  {
+    "woeid": 721943,
+    "name": "Rome",
+    "countryCode": "IT",
+    "country": "Italy"
+  },
+  {
+    "woeid": 725003,
+    "name": "Turin",
+    "countryCode": "IT",
+    "country": "Italy"
+  },
+  {
+    "woeid": 726874,
+    "name": "Den Haag",
+    "countryCode": "NL",
+    "country": "Netherlands"
+  },
+  {
+    "woeid": 727232,
+    "name": "Amsterdam",
+    "countryCode": "NL",
+    "country": "Netherlands"
+  },
+  {
+    "woeid": 733075,
+    "name": "Rotterdam",
+    "countryCode": "NL",
+    "country": "Netherlands"
+  },
+  {
+    "woeid": 734047,
+    "name": "Utrecht",
+    "countryCode": "NL",
+    "country": "Netherlands"
+  },
+  {
+    "woeid": 753692,
+    "name": "Barcelona",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 754542,
+    "name": "Bilbao",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 764814,
+    "name": "Las Palmas",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 766273,
+    "name": "Madrid",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 766356,
+    "name": "Malaga",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 768026,
+    "name": "Murcia",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 769293,
+    "name": "Palma",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 774508,
+    "name": "Seville",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 776688,
+    "name": "Valencia",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 779063,
+    "name": "Zaragoza",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 782538,
+    "name": "Geneva",
+    "countryCode": "CH",
+    "country": "Switzerland"
+  },
+  {
+    "woeid": 783058,
+    "name": "Lausanne",
+    "countryCode": "CH",
+    "country": "Switzerland"
+  },
+  {
+    "woeid": 784794,
+    "name": "Zurich",
+    "countryCode": "CH",
+    "country": "Switzerland"
+  },
+  {
+    "woeid": 824382,
+    "name": "Brest",
+    "countryCode": "BY",
+    "country": "Belarus"
+  },
+  {
+    "woeid": 825848,
+    "name": "Grodno",
+    "countryCode": "BY",
+    "country": "Belarus"
+  },
+  {
+    "woeid": 825978,
+    "name": "Gomel",
+    "countryCode": "BY",
+    "country": "Belarus"
+  },
+  {
+    "woeid": 834463,
+    "name": "Minsk",
+    "countryCode": "BY",
+    "country": "Belarus"
+  },
+  {
+    "woeid": 854823,
+    "name": "Riga",
+    "countryCode": "LV",
+    "country": "Latvia"
+  },
+  {
+    "woeid": 857105,
+    "name": "Bergen",
+    "countryCode": "NO",
+    "country": "Norway"
+  },
+  {
+    "woeid": 862592,
+    "name": "Oslo",
+    "countryCode": "NO",
+    "country": "Norway"
+  },
+  {
+    "woeid": 890869,
+    "name": "Gothenburg",
+    "countryCode": "SE",
+    "country": "Sweden"
+  },
+  {
+    "woeid": 906057,
+    "name": "Stockholm",
+    "countryCode": "SE",
+    "country": "Sweden"
+  },
+  {
+    "woeid": 918981,
+    "name": "Dnipropetrovsk",
+    "countryCode": "UA",
+    "country": "Ukraine"
+  },
+  {
+    "woeid": 919163,
+    "name": "Donetsk",
+    "countryCode": "UA",
+    "country": "Ukraine"
+  },
+  {
+    "woeid": 922137,
+    "name": "Kharkiv",
+    "countryCode": "UA",
+    "country": "Ukraine"
+  },
+  {
+    "woeid": 924938,
+    "name": "Kyiv",
+    "countryCode": "UA",
+    "country": "Ukraine"
+  },
+  {
+    "woeid": 924943,
+    "name": "Lviv",
+    "countryCode": "UA",
+    "country": "Ukraine"
+  },
+  {
+    "woeid": 929398,
+    "name": "Odesa",
+    "countryCode": "UA",
+    "country": "Ukraine"
+  },
+  {
+    "woeid": 939628,
+    "name": "Zaporozhye",
+    "countryCode": "UA",
+    "country": "Ukraine"
+  },
+  {
+    "woeid": 946738,
+    "name": "Athens",
+    "countryCode": "GR",
+    "country": "Greece"
+  },
+  {
+    "woeid": 963291,
+    "name": "Thessaloniki",
+    "countryCode": "GR",
+    "country": "Greece"
+  },
+  {
+    "woeid": 1030077,
+    "name": "Bekasi",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1032539,
+    "name": "Depok",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1040779,
+    "name": "Pekanbaru",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1044316,
+    "name": "Surabaya",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1046138,
+    "name": "Makassar",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1047180,
+    "name": "Bandung",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1047378,
+    "name": "Jakarta",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1047908,
+    "name": "Medan",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1048059,
+    "name": "Palembang",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1048324,
+    "name": "Semarang",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1048536,
+    "name": "Tangerang",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 1062617,
+    "name": "Singapore",
+    "countryCode": "SG",
+    "country": "Singapore"
+  },
+  {
+    "woeid": 1098081,
+    "name": "Perth",
+    "countryCode": "AU",
+    "country": "Australia"
+  },
+  {
+    "woeid": 1099805,
+    "name": "Adelaide",
+    "countryCode": "AU",
+    "country": "Australia"
+  },
+  {
+    "woeid": 1100661,
+    "name": "Brisbane",
+    "countryCode": "AU",
+    "country": "Australia"
+  },
+  {
+    "woeid": 1100968,
+    "name": "Canberra",
+    "countryCode": "AU",
+    "country": "Australia"
+  },
+  {
+    "woeid": 1101597,
+    "name": "Darwin",
+    "countryCode": "AU",
+    "country": "Australia"
+  },
+  {
+    "woeid": 1103816,
+    "name": "Melbourne",
+    "countryCode": "AU",
+    "country": "Australia"
+  },
+  {
+    "woeid": 1105779,
+    "name": "Sydney",
+    "countryCode": "AU",
+    "country": "Australia"
+  },
+  {
+    "woeid": 1110809,
+    "name": "Kitakyushu",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1116753,
+    "name": "Saitama",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1117034,
+    "name": "Chiba",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1117099,
+    "name": "Fukuoka",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1117155,
+    "name": "Hamamatsu",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1117227,
+    "name": "Hiroshima",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1117502,
+    "name": "Kawasaki",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1117545,
+    "name": "Kobe",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1117605,
+    "name": "Kumamoto",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1117817,
+    "name": "Nagoya",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1117881,
+    "name": "Niigata",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1118072,
+    "name": "Sagamihara",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1118108,
+    "name": "Sapporo",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1118129,
+    "name": "Sendai",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1118285,
+    "name": "Takamatsu",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1118370,
+    "name": "Tokyo",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1118550,
+    "name": "Yokohama",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 1130853,
+    "name": "Goyang",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132094,
+    "name": "Yongin",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132444,
+    "name": "Ansan",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132445,
+    "name": "Bucheon",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132447,
+    "name": "Busan",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132449,
+    "name": "Changwon",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132466,
+    "name": "Daegu",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132481,
+    "name": "Gwangju",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132496,
+    "name": "Incheon",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132559,
+    "name": "Seongnam",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132567,
+    "name": "Suwon",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132578,
+    "name": "Ulsan",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1132599,
+    "name": "Seoul",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 1141268,
+    "name": "Kajang",
+    "countryCode": "MY",
+    "country": "Malaysia"
+  },
+  {
+    "woeid": 1154679,
+    "name": "Ipoh",
+    "countryCode": "MY",
+    "country": "Malaysia"
+  },
+  {
+    "woeid": 1154698,
+    "name": "Johor Bahru",
+    "countryCode": "MY",
+    "country": "Malaysia"
+  },
+  {
+    "woeid": 1154726,
+    "name": "Klang",
+    "countryCode": "MY",
+    "country": "Malaysia"
+  },
+  {
+    "woeid": 1154781,
+    "name": "Kuala Lumpur",
+    "countryCode": "MY",
+    "country": "Malaysia"
+  },
+  {
+    "woeid": 1167715,
+    "name": "Calocan",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1180689,
+    "name": "Makati",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1187115,
+    "name": "Pasig",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1195098,
+    "name": "Taguig",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1198785,
+    "name": "Antipolo",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1199002,
+    "name": "Cagayan de Oro",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1199079,
+    "name": "Cebu City",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1199136,
+    "name": "Davao City",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1199477,
+    "name": "Manila",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1199682,
+    "name": "Quezon City",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1199980,
+    "name": "Zamboanga City",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 1225448,
+    "name": "Bangkok",
+    "countryCode": "TH",
+    "country": "Thailand"
+  },
+  {
+    "woeid": 1236594,
+    "name": "Hanoi",
+    "countryCode": "VN",
+    "country": "Vietnam"
+  },
+  {
+    "woeid": 1236690,
+    "name": "Hai Phong",
+    "countryCode": "VN",
+    "country": "Vietnam"
+  },
+  {
+    "woeid": 1252351,
+    "name": "Can Tho",
+    "countryCode": "VN",
+    "country": "Vietnam"
+  },
+  {
+    "woeid": 1252376,
+    "name": "Da Nang",
+    "countryCode": "VN",
+    "country": "Vietnam"
+  },
+  {
+    "woeid": 1252431,
+    "name": "Ho Chi Minh City",
+    "countryCode": "VN",
+    "country": "Vietnam"
+  },
+  {
+    "woeid": 1253079,
+    "name": "Algiers",
+    "countryCode": "DZ",
+    "country": "Algeria"
+  },
+  {
+    "woeid": 1326075,
+    "name": "Accra",
+    "countryCode": "GH",
+    "country": "Ghana"
+  },
+  {
+    "woeid": 1330595,
+    "name": "Kumasi",
+    "countryCode": "GH",
+    "country": "Ghana"
+  },
+  {
+    "woeid": 1387660,
+    "name": "Benin City",
+    "countryCode": "NG",
+    "country": "Nigeria"
+  },
+  {
+    "woeid": 1393672,
+    "name": "Ibadan",
+    "countryCode": "NG",
+    "country": "Nigeria"
+  },
+  {
+    "woeid": 1396439,
+    "name": "Kaduna",
+    "countryCode": "NG",
+    "country": "Nigeria"
+  },
+  {
+    "woeid": 1396803,
+    "name": "Kano",
+    "countryCode": "NG",
+    "country": "Nigeria"
+  },
+  {
+    "woeid": 1398823,
+    "name": "Lagos",
+    "countryCode": "NG",
+    "country": "Nigeria"
+  },
+  {
+    "woeid": 1404447,
+    "name": "Port Harcourt",
+    "countryCode": "NG",
+    "country": "Nigeria"
+  },
+  {
+    "woeid": 1521643,
+    "name": "Giza",
+    "countryCode": "EG",
+    "country": "Egypt"
+  },
+  {
+    "woeid": 1521894,
+    "name": "Cairo",
+    "countryCode": "EG",
+    "country": "Egypt"
+  },
+  {
+    "woeid": 1522006,
+    "name": "Alexandria",
+    "countryCode": "EG",
+    "country": "Egypt"
+  },
+  {
+    "woeid": 1528335,
+    "name": "Mombasa",
+    "countryCode": "KE",
+    "country": "Kenya"
+  },
+  {
+    "woeid": 1528488,
+    "name": "Nairobi",
+    "countryCode": "KE",
+    "country": "Kenya"
+  },
+  {
+    "woeid": 1580913,
+    "name": "Durban",
+    "countryCode": "ZA",
+    "country": "South Africa"
+  },
+  {
+    "woeid": 1582504,
+    "name": "Johannesburg",
+    "countryCode": "ZA",
+    "country": "South Africa"
+  },
+  {
+    "woeid": 1586614,
+    "name": "Port Elizabeth",
+    "countryCode": "ZA",
+    "country": "South Africa"
+  },
+  {
+    "woeid": 1586638,
+    "name": "Pretoria",
+    "countryCode": "ZA",
+    "country": "South Africa"
+  },
+  {
+    "woeid": 1587677,
+    "name": "Soweto",
+    "countryCode": "ZA",
+    "country": "South Africa"
+  },
+  {
+    "woeid": 1591691,
+    "name": "Cape Town",
+    "countryCode": "ZA",
+    "country": "South Africa"
+  },
+  {
+    "woeid": 1937801,
+    "name": "Medina",
+    "countryCode": "SA",
+    "country": "Saudi Arabia"
+  },
+  {
+    "woeid": 1939574,
+    "name": "Dammam",
+    "countryCode": "SA",
+    "country": "Saudi Arabia"
+  },
+  {
+    "woeid": 1939753,
+    "name": "Riyadh",
+    "countryCode": "SA",
+    "country": "Saudi Arabia"
+  },
+  {
+    "woeid": 1939873,
+    "name": "Jeddah",
+    "countryCode": "SA",
+    "country": "Saudi Arabia"
+  },
+  {
+    "woeid": 1939897,
+    "name": "Mecca",
+    "countryCode": "SA",
+    "country": "Saudi Arabia"
+  },
+  {
+    "woeid": 1940119,
+    "name": "Sharjah",
+    "countryCode": "AE",
+    "country": "United Arab Emirates"
+  },
+  {
+    "woeid": 1940330,
+    "name": "Abu Dhabi",
+    "countryCode": "AE",
+    "country": "United Arab Emirates"
+  },
+  {
+    "woeid": 1940345,
+    "name": "Dubai",
+    "countryCode": "AE",
+    "country": "United Arab Emirates"
+  },
+  {
+    "woeid": 1967449,
+    "name": "Haifa",
+    "countryCode": "IL",
+    "country": "Israel"
+  },
+  {
+    "woeid": 1968212,
+    "name": "Tel Aviv",
+    "countryCode": "IL",
+    "country": "Israel"
+  },
+  {
+    "woeid": 1968222,
+    "name": "Jerusalem",
+    "countryCode": "IL",
+    "country": "Israel"
+  },
+  {
+    "woeid": 1968902,
+    "name": "Amman",
+    "countryCode": "JO",
+    "country": "Jordan"
+  },
+  {
+    "woeid": 1997422,
+    "name": "Chelyabinsk",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2018708,
+    "name": "Khabarovsk",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2028717,
+    "name": "Krasnodar",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2029043,
+    "name": "Krasnoyarsk",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2077746,
+    "name": "Samara",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2108210,
+    "name": "Voronezh",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2112237,
+    "name": "Yekaterinburg",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2121040,
+    "name": "Irkutsk",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2121267,
+    "name": "Kazan",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2122265,
+    "name": "Moscow",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2122471,
+    "name": "Nizhny Novgorod",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2122541,
+    "name": "Novosibirsk",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2122641,
+    "name": "Omsk",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2122814,
+    "name": "Perm",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2123177,
+    "name": "Rostov-on-Don",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2123260,
+    "name": "Saint Petersburg",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2124045,
+    "name": "Ufa",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2124288,
+    "name": "Vladivostok",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2124298,
+    "name": "Volgograd",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 2211096,
+    "name": "Karachi",
+    "countryCode": "PK",
+    "country": "Pakistan"
+  },
+  {
+    "woeid": 2211177,
+    "name": "Lahore",
+    "countryCode": "PK",
+    "country": "Pakistan"
+  },
+  {
+    "woeid": 2211269,
+    "name": "Multan",
+    "countryCode": "PK",
+    "country": "Pakistan"
+  },
+  {
+    "woeid": 2211387,
+    "name": "Rawalpindi",
+    "countryCode": "PK",
+    "country": "Pakistan"
+  },
+  {
+    "woeid": 2211574,
+    "name": "Faisalabad",
+    "countryCode": "PK",
+    "country": "Pakistan"
+  },
+  {
+    "woeid": 2268284,
+    "name": "Muscat",
+    "countryCode": "OM",
+    "country": "Oman"
+  },
+  {
+    "woeid": 2282863,
+    "name": "Nagpur",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295377,
+    "name": "Lucknow",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295378,
+    "name": "Kanpur",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295381,
+    "name": "Patna",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295383,
+    "name": "Ranchi",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295386,
+    "name": "Kolkata",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295387,
+    "name": "Srinagar",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295388,
+    "name": "Amritsar",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295401,
+    "name": "Jaipur",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295402,
+    "name": "Ahmedabad",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295404,
+    "name": "Rajkot",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295405,
+    "name": "Surat",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295407,
+    "name": "Bhopal",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295408,
+    "name": "Indore",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295410,
+    "name": "Thane",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295411,
+    "name": "Mumbai",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295412,
+    "name": "Pune",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295414,
+    "name": "Hyderabad",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295420,
+    "name": "Bangalore",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2295424,
+    "name": "Chennai",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 2323778,
+    "name": "Mersin",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2343678,
+    "name": "Adana",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2343732,
+    "name": "Ankara",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2343733,
+    "name": "Antalya",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2343843,
+    "name": "Bursa",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2343932,
+    "name": "Diyarbakır",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2343980,
+    "name": "Eskişehir",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2343999,
+    "name": "Gaziantep",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2344116,
+    "name": "Istanbul",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2344117,
+    "name": "Izmir",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2344174,
+    "name": "Kayseri",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2344210,
+    "name": "Konya",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 2345896,
+    "name": "Okinawa",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 2345975,
+    "name": "Daejeon",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 2348079,
+    "name": "Auckland",
+    "countryCode": "NZ",
+    "country": "New Zealand"
+  },
+  {
+    "woeid": 2352824,
+    "name": "Albuquerque",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2357024,
+    "name": "Atlanta",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2357536,
+    "name": "Austin",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2358820,
+    "name": "Baltimore",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2359991,
+    "name": "Baton Rouge",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2364559,
+    "name": "Birmingham",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2367105,
+    "name": "Boston",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2378426,
+    "name": "Charlotte",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2379574,
+    "name": "Chicago",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2380358,
+    "name": "Cincinnati",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2381475,
+    "name": "Cleveland",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2383489,
+    "name": "Colorado Springs",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2383660,
+    "name": "Columbus",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2388929,
+    "name": "Dallas-Ft. Worth",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2391279,
+    "name": "Denver",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2391585,
+    "name": "Detroit",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2397816,
+    "name": "El Paso",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2407517,
+    "name": "Fresno",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2414469,
+    "name": "Greensboro",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2418046,
+    "name": "Harrisburg",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2423945,
+    "name": "Honolulu",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2424766,
+    "name": "Houston",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2427032,
+    "name": "Indianapolis",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2428184,
+    "name": "Jackson",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2428344,
+    "name": "Jacksonville",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2430683,
+    "name": "Kansas City",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2436704,
+    "name": "Las Vegas",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2441472,
+    "name": "Long Beach",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2442047,
+    "name": "Los Angeles",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2442327,
+    "name": "Louisville",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2449323,
+    "name": "Memphis",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2449808,
+    "name": "Mesa",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2450022,
+    "name": "Miami",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2451822,
+    "name": "Milwaukee",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2452078,
+    "name": "Minneapolis",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2457170,
+    "name": "Nashville",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2458410,
+    "name": "New Haven",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2458833,
+    "name": "New Orleans",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2459115,
+    "name": "New York",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2460389,
+    "name": "Norfolk",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2464592,
+    "name": "Oklahoma City",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2465512,
+    "name": "Omaha",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2466256,
+    "name": "Orlando",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2471217,
+    "name": "Philadelphia",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2471390,
+    "name": "Phoenix",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2473224,
+    "name": "Pittsburgh",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2475687,
+    "name": "Portland",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2477058,
+    "name": "Providence",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2478307,
+    "name": "Raleigh",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2480894,
+    "name": "Richmond",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2486340,
+    "name": "Sacramento",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2486982,
+    "name": "St. Louis",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2487610,
+    "name": "Salt Lake City",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2487796,
+    "name": "San Antonio",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2487889,
+    "name": "San Diego",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2487956,
+    "name": "San Francisco",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2488042,
+    "name": "San Jose",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2490383,
+    "name": "Seattle",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2503713,
+    "name": "Tallahassee",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2503863,
+    "name": "Tampa",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2508428,
+    "name": "Tucson",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2512636,
+    "name": "Virginia Beach",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 2514815,
+    "name": "Washington",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 15015370,
+    "name": "Osaka",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 15015372,
+    "name": "Kyoto",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 20070458,
+    "name": "Delhi",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 23424738,
+    "name": "United Arab Emirates",
+    "countryCode": "AE",
+    "country": "United Arab Emirates"
+  },
+  {
+    "woeid": 23424740,
+    "name": "Algeria",
+    "countryCode": "DZ",
+    "country": "Algeria"
+  },
+  {
+    "woeid": 23424747,
+    "name": "Argentina",
+    "countryCode": "AR",
+    "country": "Argentina"
+  },
+  {
+    "woeid": 23424748,
+    "name": "Australia",
+    "countryCode": "AU",
+    "country": "Australia"
+  },
+  {
+    "woeid": 23424750,
+    "name": "Austria",
+    "countryCode": "AT",
+    "country": "Austria"
+  },
+  {
+    "woeid": 23424753,
+    "name": "Bahrain",
+    "countryCode": "BH",
+    "country": "Bahrain"
+  },
+  {
+    "woeid": 23424757,
+    "name": "Belgium",
+    "countryCode": "BE",
+    "country": "Belgium"
+  },
+  {
+    "woeid": 23424765,
+    "name": "Belarus",
+    "countryCode": "BY",
+    "country": "Belarus"
+  },
+  {
+    "woeid": 23424768,
+    "name": "Brazil",
+    "countryCode": "BR",
+    "country": "Brazil"
+  },
+  {
+    "woeid": 23424775,
+    "name": "Canada",
+    "countryCode": "CA",
+    "country": "Canada"
+  },
+  {
+    "woeid": 23424782,
+    "name": "Chile",
+    "countryCode": "CL",
+    "country": "Chile"
+  },
+  {
+    "woeid": 23424787,
+    "name": "Colombia",
+    "countryCode": "CO",
+    "country": "Colombia"
+  },
+  {
+    "woeid": 23424796,
+    "name": "Denmark",
+    "countryCode": "DK",
+    "country": "Denmark"
+  },
+  {
+    "woeid": 23424800,
+    "name": "Dominican Republic",
+    "countryCode": "DO",
+    "country": "Dominican Republic"
+  },
+  {
+    "woeid": 23424801,
+    "name": "Ecuador",
+    "countryCode": "EC",
+    "country": "Ecuador"
+  },
+  {
+    "woeid": 23424802,
+    "name": "Egypt",
+    "countryCode": "EG",
+    "country": "Egypt"
+  },
+  {
+    "woeid": 23424803,
+    "name": "Ireland",
+    "countryCode": "IE",
+    "country": "Ireland"
+  },
+  {
+    "woeid": 23424819,
+    "name": "France",
+    "countryCode": "FR",
+    "country": "France"
+  },
+  {
+    "woeid": 23424824,
+    "name": "Ghana",
+    "countryCode": "GH",
+    "country": "Ghana"
+  },
+  {
+    "woeid": 23424829,
+    "name": "Germany",
+    "countryCode": "DE",
+    "country": "Germany"
+  },
+  {
+    "woeid": 23424833,
+    "name": "Greece",
+    "countryCode": "GR",
+    "country": "Greece"
+  },
+  {
+    "woeid": 23424834,
+    "name": "Guatemala",
+    "countryCode": "GT",
+    "country": "Guatemala"
+  },
+  {
+    "woeid": 23424846,
+    "name": "Indonesia",
+    "countryCode": "ID",
+    "country": "Indonesia"
+  },
+  {
+    "woeid": 23424848,
+    "name": "India",
+    "countryCode": "IN",
+    "country": "India"
+  },
+  {
+    "woeid": 23424852,
+    "name": "Israel",
+    "countryCode": "IL",
+    "country": "Israel"
+  },
+  {
+    "woeid": 23424853,
+    "name": "Italy",
+    "countryCode": "IT",
+    "country": "Italy"
+  },
+  {
+    "woeid": 23424856,
+    "name": "Japan",
+    "countryCode": "JP",
+    "country": "Japan"
+  },
+  {
+    "woeid": 23424860,
+    "name": "Jordan",
+    "countryCode": "JO",
+    "country": "Jordan"
+  },
+  {
+    "woeid": 23424863,
+    "name": "Kenya",
+    "countryCode": "KE",
+    "country": "Kenya"
+  },
+  {
+    "woeid": 23424868,
+    "name": "Korea",
+    "countryCode": "KR",
+    "country": "Korea"
+  },
+  {
+    "woeid": 23424870,
+    "name": "Kuwait",
+    "countryCode": "KW",
+    "country": "Kuwait"
+  },
+  {
+    "woeid": 23424873,
+    "name": "Lebanon",
+    "countryCode": "LB",
+    "country": "Lebanon"
+  },
+  {
+    "woeid": 23424874,
+    "name": "Latvia",
+    "countryCode": "LV",
+    "country": "Latvia"
+  },
+  {
+    "woeid": 23424898,
+    "name": "Oman",
+    "countryCode": "OM",
+    "country": "Oman"
+  },
+  {
+    "woeid": 23424900,
+    "name": "Mexico",
+    "countryCode": "MX",
+    "country": "Mexico"
+  },
+  {
+    "woeid": 23424901,
+    "name": "Malaysia",
+    "countryCode": "MY",
+    "country": "Malaysia"
+  },
+  {
+    "woeid": 23424908,
+    "name": "Nigeria",
+    "countryCode": "NG",
+    "country": "Nigeria"
+  },
+  {
+    "woeid": 23424909,
+    "name": "Netherlands",
+    "countryCode": "NL",
+    "country": "Netherlands"
+  },
+  {
+    "woeid": 23424910,
+    "name": "Norway",
+    "countryCode": "NO",
+    "country": "Norway"
+  },
+  {
+    "woeid": 23424916,
+    "name": "New Zealand",
+    "countryCode": "NZ",
+    "country": "New Zealand"
+  },
+  {
+    "woeid": 23424919,
+    "name": "Peru",
+    "countryCode": "PE",
+    "country": "Peru"
+  },
+  {
+    "woeid": 23424922,
+    "name": "Pakistan",
+    "countryCode": "PK",
+    "country": "Pakistan"
+  },
+  {
+    "woeid": 23424923,
+    "name": "Poland",
+    "countryCode": "PL",
+    "country": "Poland"
+  },
+  {
+    "woeid": 23424924,
+    "name": "Panama",
+    "countryCode": "PA",
+    "country": "Panama"
+  },
+  {
+    "woeid": 23424925,
+    "name": "Portugal",
+    "countryCode": "PT",
+    "country": "Portugal"
+  },
+  {
+    "woeid": 23424930,
+    "name": "Qatar",
+    "countryCode": "QA",
+    "country": "Qatar"
+  },
+  {
+    "woeid": 23424934,
+    "name": "Philippines",
+    "countryCode": "PH",
+    "country": "Philippines"
+  },
+  {
+    "woeid": 23424935,
+    "name": "Puerto Rico",
+    "countryCode": "PR",
+    "country": "Puerto Rico"
+  },
+  {
+    "woeid": 23424936,
+    "name": "Russia",
+    "countryCode": "RU",
+    "country": "Russia"
+  },
+  {
+    "woeid": 23424938,
+    "name": "Saudi Arabia",
+    "countryCode": "SA",
+    "country": "Saudi Arabia"
+  },
+  {
+    "woeid": 23424942,
+    "name": "South Africa",
+    "countryCode": "ZA",
+    "country": "South Africa"
+  },
+  {
+    "woeid": 23424948,
+    "name": "Singapore",
+    "countryCode": "SG",
+    "country": "Singapore"
+  },
+  {
+    "woeid": 23424950,
+    "name": "Spain",
+    "countryCode": "ES",
+    "country": "Spain"
+  },
+  {
+    "woeid": 23424954,
+    "name": "Sweden",
+    "countryCode": "SE",
+    "country": "Sweden"
+  },
+  {
+    "woeid": 23424957,
+    "name": "Switzerland",
+    "countryCode": "CH",
+    "country": "Switzerland"
+  },
+  {
+    "woeid": 23424960,
+    "name": "Thailand",
+    "countryCode": "TH",
+    "country": "Thailand"
+  },
+  {
+    "woeid": 23424969,
+    "name": "Turkey",
+    "countryCode": "TR",
+    "country": "Turkey"
+  },
+  {
+    "woeid": 23424975,
+    "name": "United Kingdom",
+    "countryCode": "GB",
+    "country": "United Kingdom"
+  },
+  {
+    "woeid": 23424976,
+    "name": "Ukraine",
+    "countryCode": "UA",
+    "country": "Ukraine"
+  },
+  {
+    "woeid": 23424977,
+    "name": "United States",
+    "countryCode": "US",
+    "country": "United States"
+  },
+  {
+    "woeid": 23424982,
+    "name": "Venezuela",
+    "countryCode": "VE",
+    "country": "Venezuela"
+  },
+  {
+    "woeid": 23424984,
+    "name": "Vietnam",
+    "countryCode": "VN",
+    "country": "Vietnam"
+  },
+  {
+    "woeid": 56013632,
+    "name": "Petaling",
+    "countryCode": "MY",
+    "country": "Malaysia"
+  },
+  {
+    "woeid": 56013645,
+    "name": "Hulu Langat",
+    "countryCode": "MY",
+    "country": "Malaysia"
+  },
+  {
+    "woeid": 56120136,
+    "name": "Ahsa",
+    "countryCode": "SA",
+    "country": "Saudi Arabia"
+  },
+  {
+    "woeid": 90036018,
+    "name": "Okayama",
+    "countryCode": "JP",
+    "country": "Japan"
+  }
+]

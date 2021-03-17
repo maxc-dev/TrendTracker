@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :trend_data
+  resources :trends
+  resources :locations
   resources :contacts
   resources :listings
   devise_for :users

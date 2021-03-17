@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  woeid: 
+  country: MyString
+  name: MyString
+  countryCode: MyString
+  x: 9.99
+  'y': 9.99
+
+two:
+  woeid: 
+  country: MyString
+  name: MyString
+  countryCode: MyString
+  x: 9.99
+  'y': 9.99

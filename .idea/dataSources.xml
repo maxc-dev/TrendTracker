@@ -9,5 +9,12 @@
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\merca\IdeaProjects\PCBuilder\db\development.sqlite3</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="development" uuid="5a6464b1-bbd7-4cc4-a63e-7dd0f09e2443">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\merca\IdeaProjects\SocialMap\db\development.sqlite3</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

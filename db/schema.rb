@@ -10,59 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_06_142352) do
+ActiveRecord::Schema.define(version: 2021_03_17_112654) do
 
-  create_table "categories", force: :cascade do |t|
+  create_table "locations", force: :cascade do |t|
+    t.integer "woeid", null: false
+    t.string "country", null: false
     t.string "name", null: false
-    t.string "abbrv"
-    t.text "description"
-    t.boolean "compulsory", default: true
+    t.string "countryCode"
+    t.decimal "x", default: "-100.0", null: false
+    t.decimal "y", default: "-100.0", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "contacts", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.text "title", null: false
-    t.text "body", null: false
+  create_table "trend_data", force: :cascade do |t|
+    t.integer "location_id", null: false
+    t.integer "trend_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_contacts_on_user_id"
+    t.index ["location_id"], name: "index_trend_data_on_location_id"
+    t.index ["trend_id"], name: "index_trend_data_on_trend_id"
   end
 
-  create_table "list_items", force: :cascade do |t|
-    t.integer "listing_id", null: false
-    t.integer "part_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["listing_id"], name: "index_list_items_on_listing_id"
-    t.index ["part_id"], name: "index_list_items_on_part_id"
-  end
-
-  create_table "listings", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_listings_on_user_id"
-  end
-
-  create_table "manufacturers", force: :cascade do |t|
+  create_table "trends", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "parts", force: :cascade do |t|
-    t.integer "category_id", null: false
-    t.integer "manufacturer_id", null: false
-    t.string "name", null: false
-    t.string "description"
-    t.integer "power", default: 0
-    t.decimal "price", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_parts_on_category_id"
-    t.index ["manufacturer_id"], name: "index_parts_on_manufacturer_id"
   end
 
   create_table "users", force: :cascade do |t|

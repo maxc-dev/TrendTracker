@@ -23,10 +23,14 @@ class HomeController < ApplicationController
   def home
     @all_trend_data = []
 
-    TrendDatum.all.each do |trend_data|
-      location = Location.from_id(trend_data.location_id).first
-      trend = Trend.from_id(trend_data.trend_id).first
-      trend_data_point = TrendingData.new(location.x, location.y, trend.name)
+    trend_info = TrendDatum.find_by_sql([
+      'select locations.x as x, locations.y as y, trends.name as name from trend_data
+      inner join locations on trend_data.location_id = locations.id
+      inner join trends on trend_data.trend_id = trends.id'
+    ])
+
+    trend_info.each do |trend_data|
+      trend_data_point = TrendingData.new(trend_data.x, trend_data.y, trend_data.name)
       unless trend_data_point.nil?
         @all_trend_data.push trend_data_point
       end

@@ -30,7 +30,7 @@ module SocialMap
           trend_id: trend.id
         )
         if new_trend_link.save
-          puts " + Trend Link [#{trend.name}] -> [#{location.country}] Established"
+          puts " + Trend Link [#{trend.name}] -> [#{location.country} - #{location.name}] Established"
         else
           puts " - Trend Link couldn't save?"
         end
@@ -71,7 +71,8 @@ module SocialMap
       end
 
       # new thread to get the twitter api data in the background
-      th = Thread.new do
+=begin
+      Thread.new do
         Rails.application.executor.wrap do
           # randomly selects an element from the array of locations every 5 seconds
           locations = (1..467).to_a
@@ -83,11 +84,11 @@ module SocialMap
             location_index = locations.sample
             locations.delete location_index
             pull_tweets(conn, location_index)
-            sleep 3
+            sleep 10
           end
         end
       end
-      th.run
+=end
 
       # gets the coordinates of a city
 =begin

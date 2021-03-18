@@ -4,4 +4,6 @@ class TrendDatum < ApplicationRecord
 
   belongs_to :trend
   belongs_to :location
+
+  scope :from_id, ->(loc_id) { where(['id = ?', loc_id]) }
 end

@@ -19,53 +19,75 @@ module SocialMap
         req.adapter Faraday.default_adapter
       end
 
-      # clear old trend data
-      Trend.delete_all
+      def set_trend_at_loc(location, trend)
+        # if the same trend and location already exist, ignore
+        TrendDatum.where(location_id: location.id).destroy_all
+        # TODO delete old trend from Trend table if no uses
 
-      Location.all.shuffle.each do |location|
-        Rails.logger.info "Gathering data from: #{location.country} -> #{location.name}"
-        trends_from_area = conn.get("/1.1/trends/place.json?id=#{location.woeid}")
-
-        unless trends_from_area.status != 200
-          trends_json = JSON.parse(trends_from_area.body)
-          (0..4).each do |j|
-            begin
-              trend_name = trends_json[0]['trends'][j]['name']
-              # check if the trend exists in the database first
-              if Trend.trend_by_name(trend_name).count > 0
-                Rails.logger.info " - Trend [#{trend_name}] already exists, creating link"
-                # if the trend doesnt exist in the database, create a link instead of a new one
-                new_trend_link = TrendDatum.create(
-                  location_id: location.id,
-                  trend_id: Trend.trend_by_name(trend_name).first.id
-                )
-                new_trend_link.save
-                Rails.logger.info " - Trend Link [#{trend_name}] -> [#{location.country}] Established"
-              else
-                # try to make a new record for the trend
-                new_trend_submission = Trend.create(name: trend_name)
-
-                # if the trend saves in the database, create a link to the location in the link table
-                if new_trend_submission.save
-                  Rails.logger.info " - Trend [#{trend_name}] successfully created"
-                  new_trend_link = TrendDatum.create(location_id: location.id, trend_id: new_trend_submission.id)
-
-                  # if the trend link cannot be created, delete the trend data
-                  unless new_trend_link.save
-                    new_trend_submission.destroy
-                  else
-                    Rails.logger.info " - Trend Link [#{trend_name}] -> [#{location.country}] Established"
-                  end
-                end
-              end
-            rescue StandardError
-              Rails.logger.info '[Twitter API Error] Null data point'
-            end
-          end
+        # establish new trend loc link
+        new_trend_link = TrendDatum.create(
+          location_id: location.id,
+          trend_id: trend.id
+        )
+        if new_trend_link.save
+          puts " + Trend Link [#{trend.name}] -> [#{location.country}] Established"
+        else
+          puts " - Trend Link couldn't save?"
         end
       end
 
-      # available_trends_raw = conn.get('/1.1/trends/available.json')
+      def pull_tweets(conn, loc_index)
+        location = Location.from_id(loc_index).first
+        puts "> Getting trend for #{location.country}: #{location.name}"
+        trends_from_area = conn.get("/1.1/trends/place.json?id=#{location.woeid}")
+
+        if trends_from_area.status == 200
+          begin
+            trend_name = JSON.parse(trends_from_area.body)[0]['trends'][0]['name']
+
+            # check if the trend exists in the database first
+            trend_if_existed = Trend.trend_by_name(trend_name)
+            if trend_if_existed.count.positive?
+              puts " * Trend [#{trend_name}] already exists, creating link"
+              # if the trend doesnt exist in the database, create a link instead of a new one
+              set_trend_at_loc(location, trend_if_existed.first)
+
+            else
+              # try to make a new record for the trend
+              new_trend_submission = Trend.create(name: trend_name)
+
+              # if the trend saves in the database, create a link to the location in the link table
+              if new_trend_submission.save
+                puts " + Trend [#{new_trend_submission.name}] successfully created"
+                set_trend_at_loc(location, new_trend_submission)
+              end
+            end
+          rescue StandardError
+            puts '[Twitter API Error] Null data point'
+          end
+        else
+          puts "[Twitter API Error] Status not OK [#{trends_from_area.status}]"
+        end
+      end
+
+      # new thread to get the twitter api data in the background
+      th = Thread.new do
+        Rails.application.executor.wrap do
+          # randomly selects an element from the array of locations every 5 seconds
+          locations = (1..467).to_a
+          loop do
+            if locations.size.zero?
+              locations = (1..467).to_a
+            end
+
+            location_index = locations.sample
+            locations.delete location_index
+            pull_tweets(conn, location_index)
+            sleep 3
+          end
+        end
+      end
+      th.run
 
       # gets the coordinates of a city
 =begin
@@ -83,7 +105,6 @@ module SocialMap
     end
   end
 =end
-
     end
   end
 end

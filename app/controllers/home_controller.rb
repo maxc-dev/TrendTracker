@@ -33,6 +33,5 @@ class HomeController < ApplicationController
     end
 
     @all_trend_data = @all_trend_data.to_json
-
   end
 end

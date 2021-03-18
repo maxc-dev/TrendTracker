@@ -20,8 +20,12 @@ module SocialMap
       end
 
       def set_trend_at_loc(location, trend)
-        # if the same trend and location already exist, ignore
-        TrendDatum.where(location_id: location.id).destroy_all
+        # delete previous loc/trend link
+        potential_previous = TrendDatum.where(location_id: location.id)
+        if potential_previous.count.positive?
+          puts ' * Location/Trend already exists, deleting old pairing...'
+          potential_previous.destroy_all
+        end
         # TODO delete old trend from Trend table if no uses
 
         # establish new trend loc link
@@ -29,6 +33,7 @@ module SocialMap
           location_id: location.id,
           trend_id: trend.id
         )
+        puts ' * Trend Link made, saving...'
         if new_trend_link.save
           puts " + Trend Link [#{trend.name}] -> [#{location.country} - #{location.name}] Established"
         else
@@ -71,7 +76,6 @@ module SocialMap
       end
 
       # new thread to get the twitter api data in the background
-=begin
       Thread.new do
         Rails.application.executor.wrap do
           # randomly selects an element from the array of locations every 5 seconds
@@ -88,7 +92,6 @@ module SocialMap
           end
         end
       end
-=end
 
       # gets the coordinates of a city
 =begin

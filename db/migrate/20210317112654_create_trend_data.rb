@@ -7,4 +7,6 @@ class CreateTrendData < ActiveRecord::Migration[5.2]
       t.timestamps
     end
   end
+
+  add_index :trend_data, [:location, :trend], unique: true
 end

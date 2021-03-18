@@ -1,0 +1,19 @@
+%h1 Listing discoveries
+
+%h1
+  = @all_trend_data.size
+  = Location.count
+
+%table
+  %thead
+    %tr
+      %th Country
+      %th City
+      %th Trend
+
+  %tbody
+    - @all_trend_data.each do |discovery|
+      %tr
+        %td= discovery[0]
+        %td= discovery[1]
+        %td= discovery[2]

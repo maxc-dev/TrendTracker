@@ -63,19 +63,8 @@
               we have to have a copy of the data on the server
               then append/remove any extra data in real time
             */
-          /*
-            map.getSource('points').setData({
-              type: "FeatureCollection",
-              features: [{
-                type: "Feature",
-                properties: { "title": "University of Surrey" },
-                geometry: {
-                  type: "Point",
-                  coordinates: [-0.589514, 51.242722]
-                }
-              }]
-            });
-          */
+
+
                   // Add a symbol layer
             map.addLayer({
               'id': 'points',
@@ -95,4 +84,16 @@
             });
           }
         );
+      });
+
+      map.getSource('points').setData({
+        type: "FeatureCollection",
+        features: [{
+          type: "Feature",
+          properties: { "title": "University of Surrey" },
+          geometry: {
+            type: "Point",
+            coordinates: [-0.589514, 51.242722]
+          }
+        }]
       });

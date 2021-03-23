@@ -1,34 +1,94 @@
-%h1 Listing discoveries
+- if @all_trend_data.nil?
+  error
+- else
+  %div{id: "map", class: 'map'}
+    :javascript
+      function getJSONFeatures(input) {
+        return JSON.parse(input.replaceAll('&quot;', '\"'))
+      }
 
-%p{id: 'display' }
-  Dummy
+      var rails_source = new EventSource('/discoveries/events');
 
-%h1
-  = @all_trend_data.size
+      rails_source.addEventListener('location', (function (evt) {
+        console.log(evt.data)
+        map.getSource('points').setData({
+          type: "FeatureCollection",
+          features: getJSONFeatures(evt.data)
+        });
+      }));
 
-:javascript
-  document.getElementById('display').innerHTML = "testing"
+      var trend_data = getJSONFeatures("#{@all_trend_data}")
 
-  var rails_source = new EventSource('/discoveries/events');
+      const token = 'pk.eyJ1IjoibWF4Y3J0ciIsImEiOiJja20wcnB5bzUxbHlyMm5yemlqbnU4MTU5In0.IqwYS8p6fK7XwiJ_hTRFSA'
+      mapboxgl.accessToken = token;
+      var map = new mapboxgl.Map({
+        container: 'map',
+        center: [-0.589514, 51.242722],
+        //style: 'mapbox://styles/maxcrtr/ckmay2zhijdqq17l9c6j78qbv',
+        //style: 'mapbox://styles/mapbox/dark-v10',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        zoom: 3
+      });
 
-  rails_source.addEventListener('location', (function (evt) {
-    console.log("Hi")
-    console.log(evt.data)
-    document.getElementById('display').innerHTML = evt.data
-   }));
+      map.addControl(
+        new MapboxGeocoder({
+          accessToken: token,
+          mapboxgl: mapboxgl
+        })
+      );
+
+      map.on('load', function() {
+          // Add an image to use as a custom marker
+        map.loadImage(
+          'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
+          function(error, image) {
+            console.log(trend_data)
+            if (error) throw error;
+            map.addImage('custom-marker', image);
+                  // Add a GeoJSON source with 2 points
+            map.addSource('points', {
+              type: 'geojson',
+              data: {
+                type: 'FeatureCollection',
+                features: trend_data
+              }
+            });
+
+            /*
+                [{      // feature for surrey uni
+                  type: 'Feature',
+                  geometry: {
+                    type: 'Point',
+                    coordinates: [-0.589514, 51.242722]
+                  },
+                  properties: {
+                    title: 'hello'
+                  }
+                }]
+
+              so basically we can't 'update' the source
+              we have to have a copy of the data on the server
+              then append/remove any extra data in real time
+            */
 
 
-
-%table
-  %thead
-    %tr
-      %th Country
-      %th City
-      %th Trend
-
-  %tbody
-    - @all_trend_data.each do |discovery|
-      %tr
-        %td= discovery[0]
-        %td= discovery[1]
-        %td= discovery[2]
+                  // Add a symbol layer
+            map.addLayer({
+              'id': 'points',
+              'type': 'symbol',
+              'source': 'points',
+              'layout': {
+                'icon-image': 'custom-marker',
+                          // get the title name from the source's "title" property
+                'text-field': ['get', 'title'],
+                'text-font': [
+                  'Open Sans Semibold',
+                  'Arial Unicode MS Bold'
+                ],
+                'text-offset': [0, 1.25],
+                'text-anchor': 'top'
+              }
+            });
+          }
+        );
+      });

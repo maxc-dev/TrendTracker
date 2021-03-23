@@ -75,7 +75,7 @@ module SocialMap
         end
       end
 
-=begin
+
       # new thread to get the twitter api data in the background
       Thread.new do
         Rails.application.executor.wrap do
@@ -89,11 +89,11 @@ module SocialMap
             location_index = locations.sample
             locations.delete location_index
             pull_tweets(conn, location_index)
-            sleep 10
+            sleep 25
           end
         end
       end
-=end
+
 
       # gets the coordinates of a city
 =begin

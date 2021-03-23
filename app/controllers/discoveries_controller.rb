@@ -1,4 +1,5 @@
 class DiscoveriesController < ApplicationController
+  include ActionController::Live
 
   def index
     trend_info = TrendDatum.find_by_sql([
@@ -12,7 +13,18 @@ class DiscoveriesController < ApplicationController
     trend_info.each do |trend_data|
       @all_trend_data.push [trend_data.country, trend_data.city, trend_data.name]
     end
-
   end
 
+  def events
+    response.headers['Content-Type'] = 'text/event-stream'
+
+    sse = SSE.new(response.stream, event: "location")
+    sse.write({ name: 'data: Hello \n\n' })
+    sleep 5
+  rescue IOError
+    logger.info "Stream Closed"
+  ensure
+    sse.close
+    response.stream.close
+  end
 end

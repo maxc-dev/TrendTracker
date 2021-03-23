@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :discoveries
+  resources :discoveries do
+    collection { get :events }
+  end
   resources :trend_data
   resources :trends
   resources :locations

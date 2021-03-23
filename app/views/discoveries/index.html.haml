@@ -1,7 +1,23 @@
 %h1 Listing discoveries
 
+%p{id: 'display' }
+  Dummy
+
 %h1
   = @all_trend_data.size
+
+:javascript
+  document.getElementById('display').innerHTML = "testing"
+
+  var rails_source = new EventSource('/discoveries/events');
+
+  rails_source.addEventListener('location', (function (evt) {
+    console.log("Hi")
+    console.log(evt.data)
+    document.getElementById('display').innerHTML = evt.data
+   }));
+
+
 
 %table
   %thead

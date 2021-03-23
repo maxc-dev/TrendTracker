@@ -75,6 +75,7 @@ module SocialMap
         end
       end
 
+=begin
       # new thread to get the twitter api data in the background
       Thread.new do
         Rails.application.executor.wrap do
@@ -92,6 +93,7 @@ module SocialMap
           end
         end
       end
+=end
 
       # gets the coordinates of a city
 =begin

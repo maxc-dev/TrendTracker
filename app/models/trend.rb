@@ -1,5 +1,5 @@
 class Trend < ApplicationRecord
-  validates :name, presence: true, null: false
+  validates :name, presence: true, null: false, uniqueness: true
 
   has_many :trend_data, dependent: :destroy
 

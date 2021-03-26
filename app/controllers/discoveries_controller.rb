@@ -41,6 +41,8 @@ class DiscoveriesController < ApplicationController
   def json_callback
     all_trend_data = []
 
+    # todo rather than overwriting the old array, just replace with the locations changed
+
     trend_info = TrendDatum.find_by_sql(
       [
         'select locations.x as x, locations.y as y, trends.name as name from trend_data

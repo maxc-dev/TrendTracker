@@ -10,7 +10,6 @@
       var rails_source = new EventSource('/discoveries/events');
 
       rails_source.addEventListener('location', (function (evt) {
-        console.log(evt.data)
         map.getSource('points').setData({
           type: "FeatureCollection",
           features: getJSONFeatures(evt.data)
@@ -24,7 +23,6 @@
       var map = new mapboxgl.Map({
         container: 'map',
         center: [-0.589514, 51.242722],
-        //style: 'mapbox://styles/maxcrtr/ckmay2zhijdqq17l9c6j78qbv',
         //style: 'mapbox://styles/mapbox/dark-v10',
         style: 'mapbox://styles/mapbox/streets-v11',
         zoom: 3
@@ -54,32 +52,13 @@
               }
             });
 
-            /*
-                [{      // feature for surrey uni
-                  type: 'Feature',
-                  geometry: {
-                    type: 'Point',
-                    coordinates: [-0.589514, 51.242722]
-                  },
-                  properties: {
-                    title: 'hello'
-                  }
-                }]
-
-              so basically we can't 'update' the source
-              we have to have a copy of the data on the server
-              then append/remove any extra data in real time
-            */
-
-
-                  // Add a symbol layer
+            // Add a symbol layer
             map.addLayer({
               'id': 'points',
               'type': 'symbol',
               'source': 'points',
               'layout': {
                 'icon-image': 'custom-marker',
-                          // get the title name from the source's "title" property
                 'text-field': ['get', 'title'],
                 'text-font': [
                   'Open Sans Semibold',

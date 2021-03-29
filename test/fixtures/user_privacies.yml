@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tracking: false
+  authorization: 2021-03-26
+
+two:
+  tracking: false
+  authorization: 2021-03-26

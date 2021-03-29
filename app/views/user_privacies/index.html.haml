@@ -1,0 +1,27 @@
+:javascript
+  function geoFindUser() {
+    function success(position) {
+        const latitude  = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        window.location.href = "#{home_index_path(:accept => "true")}&x=" + latitude + "&y=" + longitude
+    }
+
+    function error() {
+        window.location.href = "#{home_index_path(:accept => "false")}"
+    }
+
+    if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error);
+    }
+  }
+
+%h1 User Privacy Agreement
+
+We want to access and store your location to improve the service for you.
+
+by default we do not collect your location.
+
+%a{href: '', onclick: 'geoFindUser();'} Accept Agreement
+
+= link_to "Reject Agreement", home_index_path(:accept => "false")
+

@@ -1,0 +1,2 @@
+module UserPrivaciesHelper
+end

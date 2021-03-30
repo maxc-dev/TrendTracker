@@ -4,7 +4,6 @@ class UserPrivacy < ApplicationRecord
 
   # associations
   belongs_to :user
-  belongs_to :location
 
   scope :user_agreement, ->(user_id) { where(['user_id = ?', user_id]) }
 end

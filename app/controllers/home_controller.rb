@@ -2,11 +2,22 @@ class HomeController < ApplicationController
   def home
     # user has selected the privacy agreement
     if params[:accept] == 'true' && params[:x].present? && params[:y].present?  # && current_user.present?
-      lat = params[:x].to_d
-      long = params[:y].to_d
-      logger.info "[#{lat}],[#{long}]"
+      latitude = params[:x].to_d
+      longitude = params[:y].to_d
 
-      #search for nearest location or store coords in database?
+      if latitude.present? && longitude.present?
+        privacy_agreement = UserPrivacy.create(
+          user_id: current_user.id,
+          latitude: latitude,
+          longitude: longitude,
+          authorization: DateTime.current
+        )
+        if privacy_agreement.save
+          logger.info 'User Privacy Agreement Accepted Successfully'
+        else
+          logger.info 'Something went wrong!'
+        end
+      end
 
     else
       logger.info 'nay'

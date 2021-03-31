@@ -35,10 +35,12 @@
         })
       );
 
+      var icon = "#{asset_path("map/trend_symbol.png")}"
+
       map.on('load', function() {
           // Add an image to use as a custom marker
         map.loadImage(
-          'https://docs.mapbox.com/mapbox-gl-js/assets/custom_marker.png',
+          icon,
           function(error, image) {
             console.log(trend_data)
             if (error) throw error;

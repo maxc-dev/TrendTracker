@@ -1,3 +1,8 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
 //importing bootstrap
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -5,17 +10,18 @@
 //imports global css variables file
 @import "vars";
 
-//imports locations that require separate scss
-@import "home";
-
 //includes w3schools standards and google api font for 'Play'
-@import url('https://fonts.googleapis.com/css?family=Play');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Proixma+Nova");
+
 @import url('https://www.w3schools.com/w3css/4/w3.css');
 
 //Setting the font for all text to be Play from google apis
 //Also removes text decoration and sets the default colour to the default colour in @vars
 * {
-  font-family: "Play", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: $text-colour;
   text-decoration: none !important;
   outline: none;
@@ -23,43 +29,9 @@
 
 //formats the general page content (body) and in relation to the header
 body {
-  background-color: $background;
-}
-
-h1, h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header {
-  padding: 10px $margin-sides;
-}
-
-/* Page content */
-.content {
   margin-top: $header-size;
-  padding: $margin-sides;
-  margin-bottom: $footer-size;
-}
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  width: 100%;
-
-  .head {
-    top: 0;
-  }
-
-  .foot {
-    bottom: 0;
-  }
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: ($header-size+2);
+  background-color: $background;
+  text-align: center;
 }
 
 /* width */
@@ -82,18 +54,138 @@ h1, h2 {
   background: $back-colour;
 }
 
-/* Responsive design to deal with card layouts */
-$card-width: 400px;
-@media only screen and (max-width: 1500px) {
-  .layout-grid {
-    grid-template-columns: repeat(2, $card-width) !important;
+ul {
+  list-style-type: none;
+}
+a, li {
+  color: $text-colour;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+}
+header {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: 'Dosis', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  color: $text-colour;
+  cursor: pointer;
+  margin-right: auto;
+}
+.logo {
+  width: 400px;
+}
+.nav-links {
+  li {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 14px 0;
+  }
+}
+button {
+  border: 1px solid $text-colour;
+  padding: 10px 20px;
+  background: none;
+  font-size: 17px;
+  font-family: 'lato', sans-serif;
+  transition: 0.7s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: $text-colour;
+  &:hover {
+    color: $back-colour;
+    background: $text-colour;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .layout-grid {
-    grid-template-columns: $card-width !important;
+a.nav-present {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $text-colour;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
   }
+  &:hover {
+    &::before {
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+}
+
+.middle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 2%;
+}
+
+h2 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  margin: 5% 20%;
+  letter-spacing: 2px;
+  padding: 0;
+  font-size: 50px;
+  position: center;
+  text-align: center;
+}
+p {
+  font-size: 18px;
+  font-family: 'Proxima Nova', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+  line-break: loose;
+}
+
+map.btn {
+  padding: 5% 20%;
+}
+
+form {
+  width: 100%;
+}
+#name {
+  width: 235px;
+  height: 35px;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+#email {
+  width: 235px;
+  height: 35px;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+label {
+  color: white;
 }
 
 /* Container layout for all card-style designs */
@@ -101,21 +193,15 @@ $card-width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-template-rows: 25% 200px auto;
+  grid-template-rows: auto;
 }
 
 .layout-grid {
   display: grid;
-  grid-template-columns: repeat(3, $card-width);
   grid-gap: 24px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.singular-layout-grid {
-  @extend .layout-grid;
-  grid-template-columns: $card-width;
 }
 
 //actual child node of the card
@@ -127,63 +213,5 @@ $shadow: 5px;
   text-align: center;
   border-radius: 5px;
   transition: 0.3s;
-  padding: 10px;
-}
-
-//background changes when hovered for a child card
-.child:hover {
-  background: $back-hover-colour;
-}
-
-.clickable-child {
-  @extend .child;
-  cursor: pointer;
-}
-
-.warning-child {
-  @extend .child;
-  background: $back-colour-warning !important;
-}
-
-.warning-child:hover {
-  background: $back-colour-warning-hover !important;
-}
-
-//sets all images to a standard style
-img {
-  border-radius: 8px;
-  max-width: 380px;
-  height: auto;
-  min-height: 200px;
-  max-height: 200px;
-}
-
-//dims certain images if there is text over it (eg "select" text)
-#dim-image {
-  opacity: 0.2;
-  transition: transform .5s;
-}
-
-//centers text over an image
-.centered-img-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-}
-
-.centered-img-container {
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-}
-
-//scrollbar css that centers it
-.container-scroll {
-  display: flex;
-  justify-self: center;
-  align-self: center;
-  margin-left: 17%;
-  margin-right: 17%;
+  padding: 20px;
 }

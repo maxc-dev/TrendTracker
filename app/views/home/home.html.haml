@@ -7,11 +7,16 @@
         on their site and allowing their posts to be clouded by advertisements that have been paid for by coporations
         and other bigger buisness. We've seen that this isolates the users from becoming knowlegdgable about certain
         topics.
-
-        Thats why we have created Trend Tracker! A web-map application that allows its users to explore the most popular
+      %p
+        That is why we have created Trend Tracker! A web-map application that allows its users to explore the most popular
         and current trends on social media platforms. Not only can you see the trends in your current locaiton but you can
         also see the current trends happening all over the world at any given time.
+      %p
+        Come and find out what the world is thinking right now!
 
-        come and find out what the world is thinking right now!
-      %a.map-btn{:href => "discoveries"}
-        %button go to map 🠒
+    %div.child
+      = link_to discoveries_path do
+        %img.preview{:src => "/assets/map/trend-tracker-preview-anim.gif"}
+
+      %a.map-btn{:href => discoveries_path }
+        %button.go-map go to map 🠒

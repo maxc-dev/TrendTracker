@@ -1,4 +1,13 @@
 en:
-  app_title: "Trend Getter"
+  app_title: "Trend Tracker"
   app_description: "Find all the trends of the world"
   author: "Max Carter"
+
+  header:
+    map: "MAP"
+    about: "ABOUT"
+    privacy: "PRIVACY"
+    account: "ACCOUNT"
+    sign_in: "SIGN IN"
+    sign_up: "SIGN UP"
+    sign_out: "SIGN OUT"

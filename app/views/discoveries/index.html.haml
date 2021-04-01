@@ -1,7 +1,12 @@
 - if @all_trend_data.nil?
-  error
+  %body
+    %div.container
+      %div.layout-grid
+        %div.child
+          %p
+            Unable to Load the map, try to refresh!
 - else
-  %div{id: "map", class: 'map'}
+  %div.map-display{id: "map", class: 'map'}
     :javascript
       function getJSONFeatures(input) {
         return JSON.parse(input.replaceAll('&quot;', '\"'))

@@ -2,18 +2,29 @@
   = link_to home_index_path do
     %img.logo{:src => "/assets/logo/logo_smaller.png"}
 
-  %nav
-    %ul.nav-links
-      %li
-        %a.nav-present{:href => home_index_path } HOME
-      %li
-        %a.nav-present{:href => discoveries_path } MAP
-      %li
-        %a.nav-present{:href => home_index_path } ABOUT
-      %li
-        %a.nav-present{:href => user_privacies_path } PRIVACY
-      %li
-        %a.nav-present{:href => home_index_path } SIGN IN
+  %div.header-nav
+    %a{:href => discoveries_path }
+      %p.header-nav-items
+        = t('header.map')
 
-  = link_to user_privacies_path do
-    %button SIGN UP
+    %a{:href => home_index_path }
+      %p.header-nav-items
+        = t('header.about')
+
+    - if current_user.present?
+      %a{:href => user_privacies_path }
+        %p.header-nav-items
+          = t('header.privacy')
+    - else
+      %a{:href => new_user_session_path }
+        %p.header-nav-items
+          = t('header.sign_in')
+
+  - if current_user.present?
+    = link_to destroy_user_session_path do
+      %button
+        = t('header.sign_out')
+  - else
+    = link_to new_user_registration_path do
+      %button
+        = t('header.sign_up')

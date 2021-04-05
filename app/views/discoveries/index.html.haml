@@ -23,14 +23,19 @@
 
       var trend_data = getJSONFeatures("#{@all_trend_data}")
 
+      var latitude = parseFloat("#{@latitude}")
+      var longitude = parseFloat("#{@longitude}")
+      var zoom = 0;
+      if (longitude !== 0 && latitude !== 0) zoom = 8
+
       const token = 'pk.eyJ1IjoibWF4Y3J0ciIsImEiOiJja20wcnB5bzUxbHlyMm5yemlqbnU4MTU5In0.IqwYS8p6fK7XwiJ_hTRFSA'
       mapboxgl.accessToken = token;
       var map = new mapboxgl.Map({
         container: 'map',
-        center: [-0.589514, 51.242722],
+        center: [longitude, latitude],
         //style: 'mapbox://styles/mapbox/dark-v10',
         style: 'mapbox://styles/mapbox/streets-v11',
-        zoom: 3
+        zoom: zoom
       });
 
       map.addControl(

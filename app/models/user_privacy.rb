@@ -1,6 +1,6 @@
 class UserPrivacy < ApplicationRecord
   # validates that the user is set and is valid
-  validates :user_id, presence: true, null: false
+  validates :user_id, presence: true, null: false, uniqueness: true
 
   # associations
   belongs_to :user

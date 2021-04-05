@@ -2,12 +2,12 @@ class UserPrivaciesController < ApplicationController
   # GET /user_privacies
   # GET /user_privacies.json
   def index
-    # privacy notice
-  end
-
-  # GET /user_privacies/1
-  # GET /user_privacies/1.json
-  def show
-    # we wont include this page
+    if current_user.present?
+      if UserPrivacy.exists?(user_id: current_user.id)
+        @agreedment_date = UserPrivacy.user_agreement(current_user.id).first.authorization
+      else
+        @agreedment_date = nil
+      end
+    end
   end
 end

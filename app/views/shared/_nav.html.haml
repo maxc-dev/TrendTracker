@@ -21,7 +21,7 @@
           = t('header.sign_in')
 
   - if current_user.present?
-    = link_to destroy_user_session_path do
+    = link_to destroy_user_session_path, :method => :delete do
       %button
         = t('header.sign_out')
   - else

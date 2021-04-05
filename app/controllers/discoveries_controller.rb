@@ -39,6 +39,18 @@ class DiscoveriesController < ApplicationController
   end
 
   def json_callback
+    # if user is present zoom in on their location
+    @latitude = 0
+    @longitude = 0
+    if current_user.present?
+      user_privacy = UserPrivacy.user_agreement(current_user.id)
+      if user_privacy.present?
+        row = user_privacy.first
+        @latitude = row.latitude
+        @longitude = row.longitude
+      end
+    end
+
     all_trend_data = []
 
     # todo rather than overwriting the old array, just replace with the locations changed

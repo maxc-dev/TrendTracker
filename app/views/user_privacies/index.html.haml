@@ -15,13 +15,29 @@
     }
   }
 
-%h1 User Privacy Agreement
+%h2 User Privacy Agreement
 
-We want to access and store your location to improve the service for you.
+%div.container
+  %div.layout-grid
+    %div.child
+      %p
+        We want to access and store your location to improve the service for you.
 
-by default we do not collect your location.
+        by default we do not collect your location.
 
-%a{href: '', onclick: 'geoFindUser();'} Accept Agreement
+    %div.child
+      %p
+        - if @agreedment_date == nil
+          We currently do not store your data.
+        - else
+          = "We currently have a record of your location from #{@agreedment_date}. If you want your data to be deleted you can do so my rejecting the agreement below. If you a"
 
-= link_to "Reject Agreement", home_index_path(:accept => "false")
+    %div.child
+      %a{href: '', onclick: 'geoFindUser();'}
+        %button
+          Accept Agreement
+      %br
 
+      = link_to home_index_path(:accept => "false") do
+        %button
+          Reject Agreement

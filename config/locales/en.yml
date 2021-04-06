@@ -4,6 +4,7 @@ en:
   author: "Max Carter"
 
   header:
+    home: "HOME"
     map: "MAP"
     about: "ABOUT"
     privacy: "PRIVACY"
@@ -11,3 +12,16 @@ en:
     sign_in: "SIGN IN"
     sign_up: "SIGN UP"
     sign_out: "SIGN OUT"
+
+  home:
+    title: "EXPLORE WHAT THE WORLD IS THINKING"
+    btn_map: "go to map 🠒"
+
+  about:
+    title: "About"
+    description: "Trend Tracker is cool!"
+
+  privacy:
+    title: "User Privacy Agreement"
+    accept: "Accept Agreement"
+    reject: "Reject Agreement"

@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   resources :locations
   devise_for :users
   root 'home#home', as: 'home_index'
+
+  get '/about' => 'about#index', as: 'about_page'
 end

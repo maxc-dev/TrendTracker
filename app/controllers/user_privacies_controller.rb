@@ -1,7 +1,6 @@
 class UserPrivaciesController < ApplicationController
-  # GET /user_privacies
-  # GET /user_privacies.json
   def index
+    # validates that the user is present, then displays the time that their location data was stored
     if current_user.present?
       if UserPrivacy.exists?(user_id: current_user.id)
         @agreedment_date = UserPrivacy.user_agreement(current_user.id).first.authorization

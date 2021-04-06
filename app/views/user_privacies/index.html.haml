@@ -15,7 +15,8 @@
     }
   }
 
-%h2 User Privacy Agreement
+%h2
+  = t('privacy.title')
 
 %div.container
   %div.layout-grid
@@ -35,9 +36,9 @@
     %div.child
       %a{href: '', onclick: 'geoFindUser();'}
         %button
-          Accept Agreement
+          = t('privacy.accept')
       %br
 
       = link_to home_index_path(:accept => "false") do
         %button
-          Reject Agreement
+          = t('privacy.reject')

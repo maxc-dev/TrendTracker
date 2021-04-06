@@ -1,4 +1,6 @@
-%h2 EXPLORE WHAT THE WORLD IS THINKING
+%h2
+  = t('home.title')
+
 %div.container
   %div.layout-grid
     %div.child
@@ -19,4 +21,5 @@
         %img.preview{:src => "/assets/map/trend-tracker-preview-anim.gif"}
 
       %a.map-btn{:href => discoveries_path }
-        %button.go-map go to map 🠒
+        %button.go-map
+          = t('home.btn_map')

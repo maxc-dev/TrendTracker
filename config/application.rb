@@ -20,53 +20,30 @@ module SocialMap
       end
 
       def set_trend_at_loc(location, trend)
-        # delete previous loc/trend link
-        potential_previous = TrendDatum.where(location_id: location.id)
-        if potential_previous.count.positive?
-          puts ' * Location/Trend already exists, deleting old pairing...'
-          potential_previous.destroy_all
-        end
-        # TODO delete old trend from Trend table if no uses
-
-        # establish new trend loc link
-        new_trend_link = TrendDatum.create(
-          location_id: location.id,
-          trend_id: trend.id
-        )
-        puts ' * Trend Link made, saving...'
-        if new_trend_link.save
-          puts " + Trend Link [#{trend.name}] -> [#{location.country} - #{location.name}] Established"
+        if TrendDatum.exists?(location_id: location.id)
+          TrendDatum.where(location_id: location.id).update(trend_id: trend.id)
+          puts " + Updated Trend at  -> [#{location.country} - #{location.name}] -> [#{trend.name}]"
         else
-          puts " - Trend Link couldn't save?"
+          # establish new trend loc link
+          new_trend_link = TrendDatum.create(location_id: location.id, trend_id: trend.id)
+          if new_trend_link.save
+            puts " + Trend Link [#{trend.name}] -> [#{location.country} - #{location.name}] Established"
+          else
+            puts " - Trend Link couldn't save?"
+          end
         end
       end
 
       def pull_tweets(conn, loc_index)
-        location = Location.from_id(loc_index).first
+        location = Location.from_id(loc_index).limit(1).first
         puts "> Getting trend for #{location.country}: #{location.name}"
         trends_from_area = conn.get("/1.1/trends/place.json?id=#{location.woeid}")
 
         if trends_from_area.status == 200
           begin
             trend_name = JSON.parse(trends_from_area.body)[0]['trends'][0]['name']
-
-            # check if the trend exists in the database first
-            trend_if_existed = Trend.trend_by_name(trend_name)
-            if trend_if_existed.count.positive?
-              puts " * Trend [#{trend_name}] already exists, creating link"
-              # if the trend doesnt exist in the database, create a link instead of a new one
-              set_trend_at_loc(location, trend_if_existed.first)
-
-            else
-              # try to make a new record for the trend
-              new_trend_submission = Trend.create(name: trend_name)
-
-              # if the trend saves in the database, create a link to the location in the link table
-              if new_trend_submission.save
-                puts " + Trend [#{new_trend_submission.name}] successfully created"
-                set_trend_at_loc(location, new_trend_submission)
-              end
-            end
+            trend = Trend.find_or_create_by(name: trend_name)
+            set_trend_at_loc(location, trend)
           rescue StandardError
             puts '[Twitter API Error] Null data point'
           end
@@ -74,7 +51,6 @@ module SocialMap
           puts "[Twitter API Error] Status not OK [#{trends_from_area.status}]"
         end
       end
-
 
       # new thread to get the twitter api data in the background
       Thread.new do
@@ -93,7 +69,6 @@ module SocialMap
           end
         end
       end
-
 
       # gets the coordinates of a city
 =begin

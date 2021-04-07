@@ -22,6 +22,18 @@ class DiscoveriesController < ApplicationController
   end
 
   def index
+    # if user is present zoom in on their location
+    @latitude = 0
+    @longitude = 0
+    if current_user.present?
+      user_privacy = UserPrivacy.user_agreement(current_user.id)
+      if user_privacy.present?
+        row = user_privacy.first
+        @latitude = row.latitude
+        @longitude = row.longitude
+      end
+    end
+
     @all_trend_data = json_callback
   end
 
@@ -39,22 +51,7 @@ class DiscoveriesController < ApplicationController
   end
 
   def json_callback
-    # if user is present zoom in on their location
-    @latitude = 0
-    @longitude = 0
-    if current_user.present?
-      user_privacy = UserPrivacy.user_agreement(current_user.id)
-      if user_privacy.present?
-        row = user_privacy.first
-        @latitude = row.latitude
-        @longitude = row.longitude
-      end
-    end
-
-    all_trend_data = []
-
-    # todo rather than overwriting the old array, just replace with the locations changed
-
+    trending_data = []
     trend_info = TrendDatum.find_by_sql(
       [
         'select locations.x as x, locations.y as y, trends.name as name from trend_data
@@ -66,9 +63,9 @@ class DiscoveriesController < ApplicationController
     trend_info.each do |trend_data|
       trend_data_point = TrendingData.new(trend_data.x, trend_data.y, trend_data.name)
       unless trend_data_point.nil?
-        all_trend_data.push trend_data_point
+        trending_data.push trend_data_point
       end
     end
-    all_trend_data.to_json
+    trending_data.to_json
   end
 end

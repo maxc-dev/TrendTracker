@@ -94,7 +94,19 @@ header {
   width: 400px;
 }
 
-button {
+input, select, textarea {
+  width: 300px;
+  padding: 1px 2px;
+  box-sizing: border-box;
+  border: none;
+  background: $background;
+  border-bottom: 2px solid $text-colour;
+  resize: none;
+  min-height: auto;
+  text-decoration: none;
+}
+
+button, input[type=button], input[type=submit], input[type=reset] {
   border: 1px solid $text-colour;
   padding: 10px 20px;
   background: none;
@@ -214,6 +226,7 @@ label {
 //actual child node of the card
 $shadow: 5px;
 .child {
+  max-width: 1000px;
   box-shadow: $shadow $shadow 4px rgba(0,0,0,0.2);
   min-height: 100px;
   background: $back-hover-colour;

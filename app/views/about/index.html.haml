@@ -6,3 +6,11 @@
     %div.child
       %p
         = t('about.description')
+
+    %div.child
+      = link_to discoveries_path do
+        %img.preview{:src => "/assets/map/trend-tracker-preview-anim.gif"}
+
+    %div.child
+      %p
+        =t('about.promote_sign_up')

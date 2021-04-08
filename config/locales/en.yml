@@ -15,13 +15,28 @@ en:
 
   home:
     title: "EXPLORE WHAT THE WORLD IS THINKING"
-    btn_map: "go to map 🠒"
+    btn_map: "VIEW MAP"
+    desc_overview: "Trend Tracker is a web application that allows its users to explore the most popular
+                            trends on social media. Not only can you see the trends in your current location but you can
+                            also see the current trends happening all over the world in real time."
+    desc_tagline: "Come and find out what the world is thinking right now!"
 
   about:
     title: "About"
-    description: "Trend Tracker is cool!"
+    description: "Trend Tracker plots user generated trends from a range of social media sites onto a map in real time.
+                This application aims to spread awareness of trends happening worldwide and locally to benefit society, researchers and businesses."
+    promote_sign_up: "You can also sign up to create an account so you can immediately find trends in your local area."
 
   privacy:
     title: "User Privacy Agreement"
     accept: "Accept Agreement"
     reject: "Reject Agreement"
+    legal:
+      premise: "With your consent, we want to access and store your user data to improve your user experience."
+      data_stored: "The data we will collect will be your location and the date at which you give authorisation for us to use this data."
+      purpose: "We use location data so that when you open the map, it will be zoomed in on your location so you can see trends that affect you the most straight away."
+      if_accepted: "If you choose to accept the user agreement we will collect your location data once, we will not make any attempt to recollect your data, unless you accept the agreement again."
+      no_third_parties: "Data is stored only on our servers and does not get sent to any third parties."
+      if_rejected: "If you choose to reject the user agreement none of your user data will be collected, although you can still accept the user agreement at a later date if you change your mind."
+
+      not_accepted: "We currently do not store any of your user data."

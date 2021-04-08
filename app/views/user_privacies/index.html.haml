@@ -22,16 +22,21 @@
   %div.layout-grid
     %div.child
       %p
-        We want to access and store your location to improve the service for you.
+        = t('privacy.legal.premise')
+        = t('privacy.legal.data_stored')
+        = t('privacy.legal.purpose')
 
-        by default we do not collect your location.
+      %p
+        = t('privacy.legal.if_accepted')
+        = t('privacy.legal.no_third_parties')
+        = t('privacy.legal.if_rejected')
 
     %div.child
       %p
         - if @agreedment_date == nil
-          We currently do not store your data.
+          = t('privacy.legal.not_accepted')
         - else
-          = "We currently have a record of your location from #{@agreedment_date}. If you want your data to be deleted you can do so my rejecting the agreement below. If you a"
+          = "We currently have a record of your location from #{@agreedment_date}. If you want your data to be deleted you can do so my rejecting the agreement below."
 
     %div.child
       %a{href: '', onclick: 'geoFindUser();'}

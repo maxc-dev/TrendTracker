@@ -159,10 +159,52 @@ p.header-nav-items {
   padding: 10px 2%;
 }
 
+@media screen and (max-width: 988px) {
+  div.map-display {
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  div.map-display {
+    margin-top: 170px;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .header-nav-items {
+    font-size: 12px !important;
+  }
+  .logo {
+    width: 300px !important;
+  }
+  button {
+    font-size: 12px !important;
+  }
+  div.map-display {
+    margin-top: 160px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .header-nav-items {
+    font-size: 11px !important;
+  }
+  .logo {
+    width: 250px !important;
+  }
+  button {
+    font-size: 12px !important;
+  }
+  div.map-display {
+    margin-top: 150px;
+  }
+}
+
 h2 {
   color: white;
   font-family: 'Lato', sans-serif;
-  margin: 120px 0 22px 0;
+  margin: 160px 0 22px 0;
   letter-spacing: 2px;
   font-size: 50px;
   position: center;

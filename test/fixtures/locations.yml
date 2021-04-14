@@ -1,17 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  woeid: 
-  country: MyString
-  name: MyString
-  countryCode: MyString
-  x: 9.99
-  'y': 9.99
+gb:
+  woeid: 44418,
+  country: United Kingdom
+  name: London
+  countryCode: GB
+  x: 51.50853
+  y: -0.12574
 
-two:
-  woeid: 
-  country: MyString
-  name: MyString
-  countryCode: MyString
-  x: 9.99
-  'y': 9.99
+do:
+  woeid: 76456
+  country: Dominican Republic
+  name: Santo Domingo
+  countryCode: DO
+  x: 18.50012
+  y: 69.98857
+
+mx:
+  woeid: 116545
+  country: Mexico
+  name: Mexico City
+  countryCode: MX
+  x: 19.42847
+  y: -99.12766

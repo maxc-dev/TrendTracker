@@ -93,21 +93,24 @@ module SocialMap
 
     def pull_tweets(conn, loc_index)
       location = Location.from_id(loc_index).limit(1).first
-      puts "> Getting trend for #{location.country}: #{location.name}"
-      trends_from_area = conn.get("/1.1/trends/place.json?id=#{location.woeid}")
+      if location.present?
+        puts "> Getting trend for #{location.country}: #{location.name}"
+        trends_from_area = conn.get("/1.1/trends/place.json?id=#{location.woeid}")
 
-      if trends_from_area.status == 200
-        begin
-          trend_name = JSON.parse(trends_from_area.body)[0]['trends'][0]['name']
-          trend = Trend.find_or_create_by(name: trend_name)
-          set_trend_at_loc(location, trend)
-        rescue StandardError
-          puts '[Twitter API Error] Null data point'
+        if trends_from_area.status == 200
+          begin
+            trend_name = JSON.parse(trends_from_area.body)[0]['trends'][0]['name']
+            trend = Trend.find_or_create_by(name: trend_name)
+            set_trend_at_loc(location, trend)
+          rescue StandardError
+            puts '[Twitter API Error] Null data point'
+          end
+        else
+          puts "[Twitter API Error] Status not OK [#{trends_from_area.status}]"
         end
       else
-        puts "[Twitter API Error] Status not OK [#{trends_from_area.status}]"
+        puts ' - Database location seed not initialized.'
       end
     end
-
   end
 end

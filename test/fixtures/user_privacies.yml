@@ -1,9 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  tracking: false
+  user_id: 1
+  latitude: 18.42847
+  longitude: 98.12766
   authorization: 2021-03-26
 
 two:
-  tracking: false
-  authorization: 2021-03-26
+  user_id: 2
+  latitude: 68.12765
+  longitude: 15.45847
+  authorization: 2021-03-27
+

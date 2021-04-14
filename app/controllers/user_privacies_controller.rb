@@ -7,6 +7,8 @@ class UserPrivaciesController < ApplicationController
       else
         @agreedment_date = nil
       end
+    else
+      redirect_to new_user_session_path
     end
   end
 end

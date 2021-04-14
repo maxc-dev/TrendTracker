@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  woeid: 
-  trend_id: 
+  location_id: 1
+  trend_id: 1
 
 two:
-  woeid: 
-  trend_id: 
+  location_id: 2
+  trend_id: 2
+
+three:
+  location_id: 3
+  trend_id: 1

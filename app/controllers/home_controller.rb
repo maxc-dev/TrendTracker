@@ -13,21 +13,31 @@ class HomeController < ApplicationController
         latitude = params[:x].to_d
         longitude = params[:y].to_d
 
+        if ENV['ENCRYPTION_KEY'].nil?
+          puts 'ERROR Encryption Key not initialized.'
+        end
+
+        crypt = ActiveSupport::MessageEncryptor.new(ENV['ENCRYPTION_KEY'])
+        encrypted_latitude = crypt.encrypt_and_sign(latitude)
+        encrypted_longitude = crypt.encrypt_and_sign(longitude)
+        puts encrypted_latitude
+        puts encrypted_longitude
+
         # validates that the coords are legit
-        if latitude.present? && longitude.present?
+        if encrypted_latitude.present? && encrypted_longitude.present?
           # creates new user privacy table
           privacy_agreement = UserPrivacy.create(
             user_id: current_user.id,
-            latitude: latitude,
-            longitude: longitude,
+            latitude: encrypted_latitude,
+            longitude: encrypted_longitude,
             authorization: DateTime.current
           )
 
           # log to server if data saves or not, then redirect
           if privacy_agreement.save
-            logger.info 'User Privacy Agreement Accepted Successfully'
+            puts 'User Privacy Agreement Accepted Successfully'
           else
-            logger.info 'Something went wrong!'
+            puts 'Something went wrong!'
           end
           redirect_to discoveries_path
         end

@@ -29,8 +29,11 @@ class DiscoveriesController < ApplicationController
       user_privacy = UserPrivacy.user_agreement(current_user.id)
       if user_privacy.present?
         row = user_privacy.first
-        @latitude = row.latitude
-        @longitude = row.longitude
+        crypt = ActiveSupport::MessageEncryptor.new(ENV['ENCRYPTION_KEY'])
+        @latitude = crypt.decrypt_and_verify(row.latitude)
+        @longitude = crypt.decrypt_and_verify(row.longitude)
+        puts @latitude
+        puts @longitude
       end
     end
 

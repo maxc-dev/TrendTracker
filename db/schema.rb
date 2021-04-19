@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_30_141442) do
+ActiveRecord::Schema.define(version: 2021_04_19_130341) do
+
+  create_table "discoveries", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "locations", force: :cascade do |t|
     t.integer "woeid", null: false
@@ -43,8 +48,8 @@ ActiveRecord::Schema.define(version: 2021_03_30_141442) do
     t.date "authorization"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.decimal "latitude"
-    t.decimal "longitude"
+    t.string "latitude"
+    t.string "longitude"
     t.index ["user_id"], name: "index_user_privacies_on_user_id"
   end
 

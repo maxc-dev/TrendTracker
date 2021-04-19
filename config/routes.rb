@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   root 'home#home', as: 'home_index'
 
   get '/about' => 'about#index', as: 'about_page'
+  get '/feed' => 'feed#index', as: 'feed_page'
 end

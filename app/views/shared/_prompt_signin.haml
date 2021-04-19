@@ -1,0 +1,11 @@
+//if user is not signed in, tell them to sign in to view their listings
+- unless current_user.present?
+  %div.container
+    %div.singular-layout-grid
+      %div.child
+        %h3
+          Login or sign up to improve your experience!
+        %h4
+          = link_to t('home.login'), new_user_session_path
+          = '|'
+          = link_to t('home.sign_up'), new_user_registration_path

@@ -6,6 +6,7 @@ en:
   header:
     home: "HOME"
     map: "MAP"
+    feed: "FEED"
     about: "ABOUT"
     privacy: "PRIVACY"
     account: "ACCOUNT"
@@ -20,6 +21,8 @@ en:
                             trends on social media. Not only can you see the trends in your current location but you can
                             also see the current trends happening all over the world in real time."
     desc_tagline: "Come and find out what the world is thinking right now!"
+    login: "Login"
+    sign_up: "Sign up"
 
   about:
     title: "About"

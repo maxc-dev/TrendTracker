@@ -32,8 +32,6 @@ class DiscoveriesController < ApplicationController
         crypt = ActiveSupport::MessageEncryptor.new(ENV['ENCRYPTION_KEY'])
         @latitude = crypt.decrypt_and_verify(row.latitude)
         @longitude = crypt.decrypt_and_verify(row.longitude)
-        puts @latitude
-        puts @longitude
       end
     end
 

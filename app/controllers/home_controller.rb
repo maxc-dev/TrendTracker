@@ -17,11 +17,10 @@ class HomeController < ApplicationController
           puts 'ERROR Encryption Key not initialized.'
         end
 
+        #encrypts the data
         crypt = ActiveSupport::MessageEncryptor.new(ENV['ENCRYPTION_KEY'])
         encrypted_latitude = crypt.encrypt_and_sign(latitude)
         encrypted_longitude = crypt.encrypt_and_sign(longitude)
-        puts encrypted_latitude
-        puts encrypted_longitude
 
         # validates that the coords are legit
         if encrypted_latitude.present? && encrypted_longitude.present?

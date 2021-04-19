@@ -286,3 +286,26 @@ img.preview {
 button.go-map {
   margin-top: 12px;
 }
+
+// table scss
+table {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, tr {
+  border: 0 solid #ddd;
+  padding: 8px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+}
+
+tr {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+}

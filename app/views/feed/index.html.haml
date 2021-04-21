@@ -1,15 +1,19 @@
 %h2
-  Your Personalised Feed
+  = t('feed.title')
 
 - unless current_user.present?
   = render 'shared/prompt_signin'
 
 %div.container
   %div.layout-grid
-    - unless @trends.nil?
+    - if @trends.nil? && current_user.present?
       %div.child
         %p
-          Here are the top trends around where you live!
+          = t('feed.accept_to_see_feed')
+    - else
+      %div.child
+        %p
+          = t('feed.top_nearby_trends')
 
         %table
           %tbody
@@ -21,22 +25,6 @@
                 - else
                   %td #{trend_data.country}:  #{trend_data.city}
 
-    - unless @top_trends.empty?
-      %div.child
-        %p
-          Here are the top trends from around the globe!
-
-        %table
-          %tbody
-            - @top_trends.each do |trend_data|
-              %tr
-                %td #{trend_data.trend}
-                - if trend_data.country == trend_data.city
-                  %td #{trend_data.country}
-                - else
-                  %td #{trend_data.country}:  #{trend_data.city}
-
-
     %div.child
       = link_to discoveries_path do
         %img.preview{:src => "/assets/map/trend-tracker-preview-anim.gif"}
@@ -47,7 +35,7 @@
 
     %div.child
       %p
-        To check the user privacy agreement to see what data we collect and what your options are, check out the privacy agreement.
+        = t('feed.privacy_options')
       %a.map-btn{:href => user_privacies_path }
         %button.go-map
-          PRIVACY AGREEMENT
+          = t('feed.privacy_link')

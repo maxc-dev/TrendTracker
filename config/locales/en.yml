@@ -24,6 +24,13 @@ en:
     login: "Login"
     sign_up: "Sign up"
 
+  feed:
+    title: "Your Personalised Feed"
+    accept_to_see_feed: "Your personalised feed can only be created with your location data. Accept the user privacy agreement at the end of the page to get your own personalised feed."
+    top_nearby_trends: "Here are the top trends around where you live!"
+    privacy_options: "You can check the user privacy agreement to see what data we collect and what your options are."
+    privacy_link: "PRIVACY AGREEMENT"
+
   about:
     title: "About"
     description: "Trend Tracker plots user generated trends from a range of social media sites onto a map in real time.

@@ -12,11 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2021_04_19_130341) do
 
-  create_table "discoveries", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "locations", force: :cascade do |t|
     t.integer "woeid", null: false
     t.string "country", null: false

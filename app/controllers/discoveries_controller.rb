@@ -43,7 +43,7 @@ class DiscoveriesController < ApplicationController
 
     sse = SSE.new(response.stream, event: 'location')
     sse.write(json_callback)
-    sleep 25
+    sleep 14
   rescue IOError
     logger.info 'Stream Closed'
   ensure

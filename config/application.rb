@@ -50,7 +50,7 @@ module SocialMap
               location_index = locations.sample
               locations.delete location_index
               pull_tweets(conn, location_index)
-              sleep 14
+              sleep 25
             end
           end
         end

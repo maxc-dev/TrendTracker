@@ -11,6 +11,7 @@ class FeedController < ApplicationController
 
   def index
     @top_trends = []
+    @trends = []
 
     if current_user.present?
       user_privacy = UserPrivacy.user_agreement(current_user.id)

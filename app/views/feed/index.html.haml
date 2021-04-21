@@ -6,11 +6,7 @@
 
 %div.container
   %div.layout-grid
-    - if @trends.nil? && current_user.present?
-      %div.child
-        %p
-          = t('feed.accept_to_see_feed')
-    - else
+    - if !@trends.empty? && current_user.present?
       %div.child
         %p
           = t('feed.top_nearby_trends')
@@ -24,6 +20,13 @@
                   %td #{trend_data.country}
                 - else
                   %td #{trend_data.country}:  #{trend_data.city}
+
+    - elsif current_user.present?
+      %div.child
+        %p
+          = t('feed.accept_to_see_feed')
+
+
 
     %div.child
       = link_to discoveries_path do

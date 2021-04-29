@@ -310,10 +310,16 @@ td, tr {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 2px;
+  color: $text-colour;
 }
 
 tr {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
+  color: $text-colour;
+}
+
+iframe.preview {
+  min-height: 546px;
 }

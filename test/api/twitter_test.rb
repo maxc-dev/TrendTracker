@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class TwitterTest < ActiveSupport::TestCase
-  def test_connection
+  test "connection" do
     conn = Faraday.new('https://api.twitter.com') do |req|
       req.headers['Authorization'] = 'Bearer AAAAAAAAAAAAAAAAAAAAAEH2NQEAAAAALCC2PRaknbdL6krT2%2B96%2FqsbWeg%3DvTURh99p9QF2r1VwbheviLwbfveXCJLOpFfKTvZ4Fk6KcyXhC4'
       req.adapter Faraday.default_adapter
@@ -15,7 +15,7 @@ class TwitterTest < ActiveSupport::TestCase
     conn.close
   end
 
-  def test_invalid_connection
+  test "invalid_connection" do
     conn = Faraday.new('https://api.twitter.com') do |req|
       req.headers['Authorization'] = 'Bearer AAAAAAAAAAAAAAAAAAAAAEH2NQEAAAAALCC2PRaknbdL6krT2%2B96%2FqsbWeg%3DvTURh99p9QF2r1VwbheviLwbfveXCJLOpFfKTvZ4Fk6KcyXhC3'
       req.adapter Faraday.default_adapter
@@ -29,7 +29,7 @@ class TwitterTest < ActiveSupport::TestCase
     conn.close
   end
 
-  def test_trends_exist_at_location
+  test "trends_exist_at_location" do
     conn = Faraday.new('https://api.twitter.com') do |req|
       req.headers['Authorization'] = 'Bearer AAAAAAAAAAAAAAAAAAAAAEH2NQEAAAAALCC2PRaknbdL6krT2%2B96%2FqsbWeg%3DvTURh99p9QF2r1VwbheviLwbfveXCJLOpFfKTvZ4Fk6KcyXhC4'
       req.adapter Faraday.default_adapter

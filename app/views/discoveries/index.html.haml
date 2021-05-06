@@ -15,6 +15,7 @@
       var rails_source = new EventSource('/discoveries/events');
 
       rails_source.addEventListener('location', (function (evt) {
+        console.log("[Developer Notice] Confirmation of SSE received at: " + new Date())
         map.getSource('points').setData({
           type: "FeatureCollection",
           features: getJSONFeatures(evt.data)

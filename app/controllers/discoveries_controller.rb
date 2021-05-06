@@ -42,6 +42,7 @@ class DiscoveriesController < ApplicationController
     response.headers['Content-Type'] = 'text/event-stream'
 
     sse = SSE.new(response.stream, event: 'location')
+    puts '-> SSE stream link with client established.'
     sse.write(json_callback)
     sleep 25
   rescue IOError
@@ -49,6 +50,7 @@ class DiscoveriesController < ApplicationController
   ensure
     sse.close
     response.stream.close
+    puts '-> SSE stream link with client closed.'
   end
 
   def json_callback

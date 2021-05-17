@@ -96,7 +96,7 @@ module SocialMap
     # requests top tweeted trends at a location
     def pull_tweets(conn, loc_index)
       # gets the location object from a location index
-      location = Location.difrom_id(loc_index).limit(1).first
+      location = Location.from_id(loc_index).limit(1).first
       # validates the location exists in the database
       if location.present?
         # gets the top trend from twitter api via faraday gem and logs to console

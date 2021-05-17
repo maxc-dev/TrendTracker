@@ -12,10 +12,15 @@
         return JSON.parse(input.replaceAll('&quot;', '\"'))
       }
 
+      // establish new SSE listener
       var rails_source = new EventSource('/discoveries/events');
 
+      // config the event source with a listener for SSEs
       rails_source.addEventListener('location', (function (evt) {
+        // log the SSE to the console
         console.log("[Developer Notice] Confirmation of SSE received at: " + new Date())
+
+        // parse the JSON features of the SSE body and send to Mapbox API
         map.getSource('points').setData({
           type: "FeatureCollection",
           features: getJSONFeatures(evt.data)
@@ -24,8 +29,11 @@
 
       var trend_data = getJSONFeatures("#{@all_trend_data}")
 
+      // parse lat/long variables to floats
       var latitude = parseFloat("#{@latitude}")
       var longitude = parseFloat("#{@longitude}")
+
+      // if the lat/long are not 0, increase the initial zoom
       var zoom = 0;
       if (longitude !== 0 && latitude !== 0) zoom = 8
 

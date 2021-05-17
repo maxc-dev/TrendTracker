@@ -50,22 +50,26 @@ class FeedController < ApplicationController
 
   # gets trends within a certain bound of some coordinates
   def get_trends_within_bound(latitude, longitude, bound)
+    # calculate upper/lower coordinate bounds for lat/long
     low_lat = latitude - bound
     high_lat = latitude + bound
     low_long = longitude - bound
     high_long = longitude + bound
 
+    # custom sql to get trends within the bounds
     trend_info = TrendDatum.find_by_sql(
       [
         'select locations.name as city, locations.country as country,
         trends.name as name from trend_data
         inner join locations on trend_data.location_id = locations.id
         inner join trends on trend_data.trend_id = trends.id
-        where locations.x > ? and locations.x < ? and locations.y > ? and locations.y < ? limit 10',
+        where locations.x > ? and locations.x < ? and
+        locations.y > ? and locations.y < ? limit 10',
         low_lat, high_lat, low_long, high_long
       ]
     )
 
+    # send all trend data to an object list then return the list
     trending_data = []
     trend_info.each do |trend_data|
       trend_data_point = LocalTrendData.new(trend_data.country, trend_data.city, trend_data.name)

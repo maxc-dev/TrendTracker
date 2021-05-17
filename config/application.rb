@@ -40,7 +40,7 @@ module SocialMap
       begin
         Thread.new do
           Rails.application.executor.wrap do
-            # randomly selects an element from the array of locations every 5 seconds
+            # randomly selects an element from the array of locations every 25 seconds
             locations = (1..467).to_a
             loop do
               if locations.size.zero?
@@ -76,12 +76,14 @@ module SocialMap
 =end
     end
 
+    # sets the one to one link between location and trend
     def set_trend_at_loc(location, trend)
+      # if the location link exists, update the record
       if TrendDatum.exists?(location_id: location.id)
         TrendDatum.where(location_id: location.id).update(trend_id: trend.id)
         puts " + Updated Trend at  -> [#{location.country} - #{location.name}] -> [#{trend.name}]"
       else
-        # establish new trend loc link
+        # establish new location/trend link
         new_trend_link = TrendDatum.create(location_id: location.id, trend_id: trend.id)
         if new_trend_link.save
           puts " + Trend Link [#{trend.name}] -> [#{location.country} - #{location.name}] Established"
@@ -91,12 +93,18 @@ module SocialMap
       end
     end
 
+    # requests top tweeted trends at a location
     def pull_tweets(conn, loc_index)
-      location = Location.from_id(loc_index).limit(1).first
+      # gets the location object from a location index
+      location = Location.difrom_id(loc_index).limit(1).first
+      # validates the location exists in the database
       if location.present?
+        # gets the top trend from twitter api via faraday gem and logs to console
         puts "> Getting trend for #{location.country}: #{location.name}"
         trends_from_area = conn.get("/1.1/trends/place.json?id=#{location.woeid}")
 
+        # if the status is 2oo (OK) parse the JSON file received and
+        # update the location/trend via set_trend_at_loc method
         if trends_from_area.status == 200
           begin
             trend_name = JSON.parse(trends_from_area.body)[0]['trends'][0]['name']
@@ -112,5 +120,6 @@ module SocialMap
         puts ' - Database location seed not initialized.'
       end
     end
+
   end
 end
